@@ -16,7 +16,7 @@ const log = [];
 
 const get = async url => {
   const r = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0', cookie: 'CONSENT=YES+1; SOCS=CAI' }, signal: AbortSignal.timeout(20000) });
-  if (!r.ok) throw new Error(`${r.status} ${url}`);
+  if (!r.ok) throw new Error(`${r.status} ${url.replace(/key=[^&]+/, 'key=***')}`); // el log va a un PR público: nunca la clave
   return r.text();
 };
 // una fuente caída no frena a las otras
@@ -46,14 +46,23 @@ await step('videos nuevos', async () => {
 
 // 2) vistas al día (videos y los números de la sección "Números" que tienen yt)
 await step('vistas', async () => {
-  const cache = {};
-  const views = async id => (cache[id] ??= +(await get(`https://www.youtube.com/watch?v=${id}`)).match(/"viewCount":"(\d+)"/)?.[1] || 0);
+  const ids = [...new Set([...D.videos.map(v => v.id), ...D.nums.filter(n => n.yt).map(n => n.yt)])];
+  const counts = {};
+  if (process.env.YT_API_KEY) {
+    // API oficial de YouTube (key gratis): una sola llamada y no depende de que YouTube nos deje scrapear
+    const j = JSON.parse(await get(`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${ids.join(',')}&key=${process.env.YT_API_KEY}`));
+    for (const i of j.items) counts[i.id] = +i.statistics.viewCount;
+  } else {
+    for (const id of ids) counts[id] = +(await get(`https://www.youtube.com/watch?v=${id}`).catch(() => '')).match(/"viewCount":"(\d+)"/)?.[1] || 0;
+  }
+  const missing = ids.filter(id => !counts[id]);
+  if (missing.length) log.push(`! vistas: no pude leer ${missing.length} de ${ids.length} videos${process.env.YT_API_KEY ? '' : ' (YouTube bloquea los servidores; usá YT_API_KEY)'}`);
   for (const v of D.videos) {
-    const n = await views(v.id).catch(() => 0);
+    const n = counts[v.id];
     if (n && n !== v.views) { log.push(`~ ${v.t}: ${v.views ?? 0} → ${n}`); v.views = n; }
   }
   for (const n of D.nums.filter(n => n.yt)) {
-    const m = Math.floor((await views(n.yt).catch(() => 0)) / 1e6);
+    const m = Math.floor((counts[n.yt] || 0) / 1e6);
     if (m > n.v) { log.push(`~ número "${n.l.slice(0, 40)}…": ${n.v}M → ${m}M`); n.v = m; }
   }
 });
@@ -70,8 +79,8 @@ await step('prensa', async () => {
       const full = text(tag(m[1], 'title')), cut = full.lastIndexOf(' - ');
       const title = cut > 0 ? full.slice(0, cut) : full, source = text(tag(m[1], 'source')) || full.slice(cut + 3);
       const d = new Date(tag(m[1], 'pubDate'));
-      // descarta lo que no nombra a Dei V en el título, y estafas / páginas de venta de entradas
-      if (!/\bDei V\b/.test(title) || /estafa|estafad|\bentradas dei v\b/i.test(title) || isNaN(d)) continue;
+      // descarta lo que no nombra a Dei V en el título, estafas, páginas de venta de entradas y videos subidos por cualquiera ("YouTube")
+      if (!/\bDei V\b/.test(title) || /estafa|estafad|\bentradas dei v\b/i.test(title) || source === 'YouTube' || isNaN(d)) continue;
       items.set(norm(source + title), { title, source, link: text(tag(m[1], 'link')), date: d.toISOString().slice(0, 7), when: +d });
     }
   const have = D.press.map(p => norm(p[2]).slice(0, 28));

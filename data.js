@@ -216,7 +216,8 @@ window.DATA = {
   "elvocerodepuertoricovideodeivcombinalounderylowaterensunuevoproyectomusical",
   "mixradiofmdeivseuneablessdparalanzarbbjustoantesdesudebutenelcholiseo",
   "metropuertoricodeivrevelalaprimeracolaboraciondesuproximoalbumbb",
-  "elpluralcomelcantanteperfectodedeiv"
+  "elpluralcomelcantanteperfectodedeiv",
+  "remezclaexclusivedeivannounceslosflavorzusatour2025herearethedates"
  ],
  "updated": "2026-10-10"
 };

@@ -17,14 +17,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node update.mjs
-      # Abre un Pull Request en vez de publicar directo: revisás las notas y le das Merge.
+      # El resultado del script queda como descripción del PR: ahí ves qué encontró y qué no pudo leer.
+      - name: Buscar novedades
+        shell: bash
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }} # opcional; ver README del script
+        run: |
+          {
+            echo 'Revisá `data.js`: si una nota no corresponde, borrá su línea antes de hacer Merge.'
+            echo
+            echo '```'
+            node update.mjs
+            echo '```'
+          } | tee log.txt
+      # Abre un Pull Request en vez de publicar directo: revisás y le das Merge.
       # Para publicar sin revisar, cambiá este paso por un commit + push directo.
       - uses: peter-evans/create-pull-request@v7
         with:
           branch: datos-semanales
+          add-paths: data.js
           commit-message: Actualizar datos semanales
           title: Datos semanales
-          body: |
-            Vistas, videos y notas nuevas encontrados por `update.mjs`.
-            Revisá `data.js`: si una nota no corresponde, borrá su línea antes de hacer Merge.
+          body-path: log.txt
