@@ -1,0 +1,30 @@
+name: Actualizar datos
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # lunes 12:00 UTC = 9:00 en Argentina
+  workflow_dispatch: # botón "Run workflow" para probarlo a mano
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node update.mjs
+      # Abre un Pull Request en vez de publicar directo: revisás las notas y le das Merge.
+      # Para publicar sin revisar, cambiá este paso por un commit + push directo.
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: datos-semanales
+          commit-message: Actualizar datos semanales
+          title: Datos semanales
+          body: |
+            Vistas, videos y notas nuevas encontrados por `update.mjs`.
+            Revisá `data.js`: si una nota no corresponde, borrá su línea antes de hacer Merge.
