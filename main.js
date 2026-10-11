@@ -21,9 +21,12 @@
   ).join('');
   /* ---------- lo último: slider con los 3 estrenos más nuevos (data.js → releases) ---------- */
   const dmy = iso => iso.split('-').reverse().join('.');
+  // r.ig = código de la publicación de Instagram de la que sale la imagen: lleva crédito con link y, si es un video (r.play), un ▶ que abre el reproductor oficial
+  const igCode = c => /^[\w-]{5,20}$/.test(c || ''); // el código solo puede tener letras, números, - y _
   const reelItem = r => r.v
     ? `<figure><video src="${esc(r.v)}" poster="${esc(r.p || '')}" muted loop playsinline preload="none" data-autoplay></video></figure>`
-    : `<figure${r.i.startsWith('https://i.ytimg.com/') ? ' class="is-thumb"' : ''}><img src="${esc(r.i)}" alt="${esc(r.a || '')}" loading="lazy"></figure>`; // los fotogramas de YouTube traen barras negras: .is-thumb las recorta
+    : `<figure><img src="${esc(r.i)}" alt="${esc(r.a || '')}" loading="lazy">${igCode(r.ig)
+        ? `${r.play ? `<button class="ig-play" data-ig="${r.ig}" aria-label="Ver el video en Instagram"><span class="ig-play__icon" aria-hidden="true">▶</span></button>` : ''}<a class="ig-credit" href="https://www.instagram.com/p/${r.ig}/" target="_blank" rel="noopener">@deivpr · Instagram ↗</a>` : ''}</figure>`;
   $('.new__slides').innerHTML = RELEASES.slice(0, 3).map((r, i, all) => {
     const long = r.t.length > 14; // títulos largos no se parten palabra por palabra
     return `<article class="new__slide" role="group" aria-roledescription="slide" aria-label="${i + 1} de ${all.length}"${i ? ' hidden' : ''} style="--accent:${esc(r.accent || '#ff3b3b')}">
@@ -34,7 +37,7 @@
         <div class="hero__cta"><button class="btn btn--light" data-yt="${esc(r.id)}">Ver el video</button>${r.listen ? `<a class="btn btn--ghost" href="${esc(r.listen)}" target="_blank" rel="noopener">Escuchar</a>` : ''}</div>
       </div>
       <button class="new__media" data-yt="${esc(r.id)}" aria-label="Ver el video de ${esc(r.t)}"><img src="${esc(r.cover)}" alt="${esc(r.coverAlt || 'Portada de ' + r.t)}"${i ? ' loading="lazy"' : ''}><span class="new__play" aria-hidden="true">▶</span></button>
-      <div class="new__reel" aria-label="Escenas de ${esc(r.t)}">${(r.reel || []).map(reelItem).join('')}</div>
+      ${(r.reel || []).length ? `<div class="new__reel" aria-label="Imágenes de ${esc(r.t)}">${r.reel.map(reelItem).join('')}</div>` : ''}
     </article>`;
   }).join('');
   const slides = $$('.new__slide'), [toNewer, toOlder] = $$('.new__arrow'), nCount = $('.new__count');
@@ -142,6 +145,8 @@
   $('.box__x').addEventListener('click', () => box.close());
   box.addEventListener('click', e => { if (e.target === box) box.close(); });
   document.addEventListener('click', e => {
+    const g = e.target.closest('[data-ig]');
+    if (g && igCode(g.dataset.ig) && !(typeof moved !== 'undefined' && moved > 6)) return openBox(`<iframe class="box__ig" src="https://www.instagram.com/p/${g.dataset.ig}/embed/" title="Publicación de Instagram" scrolling="no"></iframe>`); // moved: no abrir si fue un arrastre del reel
     const t = e.target.closest('[data-tt]');
     if (t) return openBox(`<iframe class="box__tt" src="https://www.tiktok.com/player/v1/${t.dataset.tt}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Video de TikTok"></iframe>`);
     const b = e.target.closest('[data-yt]');

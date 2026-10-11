@@ -1,7 +1,7 @@
 // Uso:  node update.mjs --dry   (muestra qué cambiaría, no escribe nada)
 //       node update.mjs         (actualiza data.js)
 // Sin dependencias ni API keys. Necesita Node 18+.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const FILE = new URL('./data.js', import.meta.url);
 const DRY = process.argv.includes('--dry');
@@ -46,18 +46,25 @@ const channelVideos = async () => {
   const feed = await get(`https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL}`);
   return [...feed.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({ id: tag(m[1], 'yt:videoId'), t: text(tag(m[1], 'title')) })).filter(v => !v.t.includes('#')); // el feed mezcla Shorts
 };
-// Slide de "Lo último" para un video nuevo: portada y fotogramas que YouTube genera solo (no hace falta mandar fotos),
-// más fecha y duración de la página del video. Para algo más rico (clips, tracklist) se edita a mano en data.js.
+// Portada oficial en HD (1000x1000) y link del single en Deezer: API pública, sin clave. null si todavía no está en Deezer.
+const DEEZER_ARTIST = 95873492;
+const deezer = async t => {
+  const j = JSON.parse(await get(`https://api.deezer.com/artist/${DEEZER_ARTIST}/albums?limit=25`).catch(() => '{}'));
+  return (j.data || []).find(a => norm(a.title) === norm(t)) ?? null;
+};
+// Slide de "Lo último" para un video nuevo: portada HD del video (maxres), fecha y duración, y la portada oficial del single.
+// Los fotogramas de YouTube (hq1..3) son de 480x360 y se ven mal: no se usan. Para más fotos o clips en HD, se editan a mano en data.js.
 const release = async (id, t) => {
   const html = await get(`https://www.youtube.com/watch?v=${id}`).catch(() => '');
   const [, y, m, d] = html.match(/"publishDate":"(\d{4})-(\d\d)-(\d\d)/) || [];
   const secs = +html.match(/"lengthSeconds":"(\d+)"/)?.[1];
-  const img = f => `https://i.ytimg.com/vi/${id}/${f}.jpg`;
+  const dz = await deezer(t);
   return {
     id, t, date: y ? `${y}-${m}-${d}` : new Date().toISOString().slice(0, 10), accent: '#ff3b3b',
     facts: [y && [`${d}.${m}.${y}`, 'Estreno del video oficial'], secs && [`${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`, 'Duración del video']].filter(Boolean),
-    cover: img('maxresdefault'), coverAlt: `Portada de ${t}`,
-    reel: ['hq1', 'hq2', 'hq3'].map((f, i) => ({ i: img(f), a: `Fotograma ${i + 1} del video de ${t}` })),
+    ...(dz && { listen: dz.link }),
+    cover: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`, coverAlt: `Portada de ${t}`,
+    reel: dz ? [{ i: dz.cover_xl, a: `Portada oficial de ${t}` }] : [],
   };
 };
 D.releases ??= [];
@@ -74,6 +81,49 @@ await step('videos nuevos', async () => {
   }
   D.videos.splice(MAX_VIDEOS); // las vistas las completa el paso siguiente
   D.releases.splice(3); // el slider muestra los 3 estrenos más nuevos
+});
+
+// 1b) Instagram: el embed público del perfil (el que Instagram ofrece a los sitios) trae el código y el texto de las últimas
+//     publicaciones, sin login ni claves. Si el texto nombra el tema, esa publicación se suma al slide de ese estreno.
+//     Solo cuentas públicas, una consulta por corrida. Si Instagram cambia el formato o bloquea, el log avisa y el resto sigue.
+const IG_USER = 'deivpr';
+const words = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter(Boolean).join(' ');
+const mentions = (caption, title) => !!words(title) && ` ${words(caption)} `.includes(` ${words(title)} `); // palabra entera: "emo" no matchea "tema"
+const decode = s => { try { return JSON.parse(`"${JSON.parse(`"${s}"`)}"`); } catch { return s; } }; // el texto viene escapado dos veces
+// Las fotos salen del mismo embed (hasta 1080 px) y se guardan en assets/ig: los links de Instagram vencen a los pocos días.
+// El video en sí NO viene en esos datos: su imagen de portada lleva un ▶ que abre el reproductor oficial de Instagram.
+const MAX_IG_IMAGES = 8; // por estreno, entre todas sus publicaciones
+const IMG_DIR = new URL('./assets/ig/', import.meta.url);
+await step('instagram', async () => {
+  const html = (await get(`https://www.instagram.com/${IG_USER}/embed/`)).replace(/\\"/g, '"');
+  const codes = [...html.matchAll(/"shortcode":"([\w-]+)"/g)];
+  const nodes = codes.map((m, i) => { // cada nodo va de su código al del siguiente: ahí están su texto, su tipo y sus tamaños de imagen
+    const chunk = html.slice(m.index, codes[i + 1]?.index ?? html.length);
+    const cap = chunk.match(/"edge_media_to_caption":\{"edges":\[\{"node":\{"text":"((?:[^"\\]|\\.)*)"/)?.[1];
+    const best = [...chunk.matchAll(/"config_width":(\d+),"config_height":(\d+),"src":"((?:[^"\\]|\\.)*)"/g)].sort((a, b) => b[1] - a[1])[0];
+    return { sc: m[1], cap: cap && decode(cap), video: /"is_video":true/.test(chunk), url: best && decode(best[3]) };
+  });
+  // publicación = nodo con texto; las fotos/videos de un carrusel son los nodos sin texto que le siguen
+  const posts = nodes.flatMap((n, i) => {
+    if (!n.cap) return [];
+    const kids = []; for (let j = i + 1; j < nodes.length && !nodes[j].cap; j++) kids.push(nodes[j]);
+    return [{ ...n, items: kids.length ? kids : [n] }];
+  });
+  if (!posts.length) throw new Error('no encontré publicaciones (¿cambió el formato del embed?)');
+  for (const r of D.releases) {
+    if (r.reel?.some(x => x.ig)) continue;
+    const imgs = [];
+    for (const p of posts.filter(p => mentions(p.cap, r.t)).slice(0, 2)) { // hasta 2 publicaciones que nombran el tema, la más nueva primero
+      for (const it of p.items) {
+        if (imgs.length >= MAX_IG_IMAGES || !it.url) continue;
+        const res = await fetch(it.url).catch(() => null);
+        if (!res?.ok) continue;
+        if (!DRY) { mkdirSync(IMG_DIR, { recursive: true }); writeFileSync(new URL(`${it.sc}.jpg`, IMG_DIR), Buffer.from(await res.arrayBuffer())); }
+        imgs.push({ i: `assets/ig/${it.sc}.jpg`, a: `Publicación de @${IG_USER} sobre ${r.t}`, ig: p.sc, ...(it.video && { play: true }) });
+      }
+    }
+    if (imgs.length) { (r.reel ??= []).unshift(...imgs); log.push(`+ instagram: ${imgs.length} imágenes para "${r.t}"`); }
+  }
 });
 
 // 2) vistas al día (videos y los números de la sección "Números" que tienen yt)

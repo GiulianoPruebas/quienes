@@ -35,7 +35,9 @@ jobs:
       - uses: peter-evans/create-pull-request@v7
         with:
           branch: datos-semanales
-          add-paths: data.js
+          add-paths: |
+            data.js
+            assets/ig
           commit-message: Actualizar datos semanales
           title: Datos semanales
           body-path: log.txt
