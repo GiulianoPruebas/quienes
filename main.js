@@ -8,7 +8,7 @@
   if (hasGsap) gsap.registerPlugin(ScrollTrigger);
 
   /* ---------- data ---------- */
-  const { timeline: TIMELINE, videos: VIDEOS, quotes: QUOTES, press: PRESS, peek: PEEK, tiktoks: TIKTOKS, nums: NUMS, updated: UPDATED } = window.DATA;
+  const { timeline: TIMELINE, videos: VIDEOS, quotes: QUOTES, press: PRESS, peek: PEEK, tiktoks: TIKTOKS, nums: NUMS, releases: RELEASES, updated: UPDATED } = window.DATA;
   const yt = id => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
   // los títulos vienen de terceros (Google News, YouTube): se escapan antes de entrar al HTML
@@ -19,7 +19,52 @@
   $('.nums').innerHTML = NUMS.map(n =>
     `<div class="num"><p class="num__v mono" data-count="${n.v}"${n.prefix ? ` data-prefix="${n.prefix}"` : ''}${n.suffix ? ` data-suffix="${n.suffix}"` : ''}>0</p><p>${n.l}</p></div>`
   ).join('');
-  $('#upd').textContent = 'Datos actualizados el ' + new Date(UPDATED + 'T12:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
+  /* ---------- lo último: slider con los 3 estrenos más nuevos (data.js → releases) ---------- */
+  const dmy = iso => iso.split('-').reverse().join('.');
+  const reelItem = r => r.v
+    ? `<figure><video src="${esc(r.v)}" poster="${esc(r.p || '')}" muted loop playsinline preload="none" data-autoplay></video></figure>`
+    : `<figure${r.i.startsWith('https://i.ytimg.com/') ? ' class="is-thumb"' : ''}><img src="${esc(r.i)}" alt="${esc(r.a || '')}" loading="lazy"></figure>`; // los fotogramas de YouTube traen barras negras: .is-thumb las recorta
+  $('.new__slides').innerHTML = RELEASES.slice(0, 3).map((r, i, all) => {
+    const long = r.t.length > 14; // títulos largos no se parten palabra por palabra
+    return `<article class="new__slide" role="group" aria-roledescription="slide" aria-label="${i + 1} de ${all.length}"${i ? ' hidden' : ''} style="--accent:${esc(r.accent || '#ff3b3b')}">
+      <div class="new__text">
+        <p class="eyebrow">${i ? 'Estreno anterior' : 'El más nuevo'} · ${dmy(r.date)}</p>
+        <h2 class="new__title${long ? ' new__title--long' : ''}">${long ? esc(r.t) : r.t.split(' ').map(esc).join(' <br>')}</h2>
+        <ul class="new__facts mono">${(r.facts || []).map(([l, t]) => `<li><b>${esc(l)}</b> ${esc(t)}</li>`).join('')}</ul>
+        <div class="hero__cta"><button class="btn btn--light" data-yt="${esc(r.id)}">Ver el video</button>${r.listen ? `<a class="btn btn--ghost" href="${esc(r.listen)}" target="_blank" rel="noopener">Escuchar</a>` : ''}</div>
+      </div>
+      <button class="new__media" data-yt="${esc(r.id)}" aria-label="Ver el video de ${esc(r.t)}"><img src="${esc(r.cover)}" alt="${esc(r.coverAlt || 'Portada de ' + r.t)}"${i ? ' loading="lazy"' : ''}><span class="new__play" aria-hidden="true">▶</span></button>
+      <div class="new__reel" aria-label="Escenas de ${esc(r.t)}">${(r.reel || []).map(reelItem).join('')}</div>
+    </article>`;
+  }).join('');
+  const slides = $$('.new__slide'), [toNewer, toOlder] = $$('.new__arrow'), nCount = $('.new__count');
+  let cur = 0;
+  const paintSlider = () => {
+    slides.forEach((s, i) => (s.hidden = i !== cur));
+    toNewer.disabled = cur === 0; toOlder.disabled = cur === slides.length - 1;
+    nCount.textContent = `${cur + 1} / ${slides.length}`;
+  };
+  const goSlide = (n, dir) => {
+    if (n < 0 || n >= slides.length || n === cur) return;
+    const had = document.activeElement;
+    cur = n; slides[cur].style.setProperty('--dir', dir); paintSlider();
+    // si la flecha enfocada se deshabilita (llegó al extremo), el foco pasa a la otra y el teclado sigue funcionando
+    if (had === toOlder && toOlder.disabled) toNewer.focus(); else if (had === toNewer && toNewer.disabled) toOlder.focus();
+    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh(); // cada slide tiene otro alto
+  };
+  $('.new__ctrl').hidden = slides.length < 2;
+  toNewer.addEventListener('click', () => goSlide(cur - 1, -1));
+  toOlder.addEventListener('click', () => goSlide(cur + 1, 1));
+  $('#nuevo').addEventListener('keydown', e => { if (e.key === 'ArrowRight') goSlide(cur + 1, 1); if (e.key === 'ArrowLeft') goSlide(cur - 1, -1); });
+  let swipeX = 0, swipeY = 0, swiping = false;
+  $('.new__slides').addEventListener('touchstart', e => { swiping = !e.target.closest('.new__reel'); swipeX = e.touches[0].clientX; swipeY = e.touches[0].clientY; }, { passive: true }); // el reel tiene su propio scroll horizontal
+  $('.new__slides').addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - swipeX, dy = e.changedTouches[0].clientY - swipeY;
+    if (swiping && Math.abs(dx) > 60 && Math.abs(dx) > 2 * Math.abs(dy)) goSlide(cur + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+  }, { passive: true });
+  paintSlider();
+
+  $('#upd').textContent ='Datos actualizados el ' + new Date(UPDATED + 'T12:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
 
   $('.tl__track').innerHTML = TIMELINE.map(c => {
     const thumb = c.yt
@@ -181,7 +226,7 @@
   }
 
   /* ---------- reveal on enter ---------- */
-  $$('.new__text > *, .new__media, .press__lead, .press__filters, .tt, .soc__col, .h2, .rec, .num, .fc__text > *, .yt, .arg__lead, .arg .eyebrow, .end > *, .tl__head p, .gal__head p').forEach(el => el.setAttribute('data-reveal', ''));
+  $$('.new__bar, .new__text > *, .new__media, .press__lead, .press__filters, .tt, .soc__col, .h2, .rec, .num, .fc__text > *, .yt, .arg__lead, .arg .eyebrow, .end > *, .tl__head p, .gal__head p').forEach(el => el.setAttribute('data-reveal', ''));
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (!e.isIntersecting) return;
     const sibs = [...e.target.parentElement.children].filter(n => n.hasAttribute('data-reveal'));

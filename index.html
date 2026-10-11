@@ -31,7 +31,7 @@
   <header class="nav">
     <a class="nav__brand" href="#top" aria-label="Inicio">DEI V <b>ARG</b></a>
     <nav class="nav__links" aria-label="Secciones">
-      <a href="#cuchi">Nuevo</a>
+      <a href="#nuevo">Nuevo</a>
       <a href="#quien">Historia</a>
       <a href="#argentina">Argentina</a>
       <a href="#fanclub">Fan club</a>
@@ -43,7 +43,7 @@
     <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
   </header>
   <div class="menu" hidden>
-    <a href="#cuchi">Cuchi Cuchi · Nuevo</a>
+    <a href="#nuevo">Lo último</a>
     <a href="#quien">Historia</a>
     <a href="#historia">Línea de tiempo</a>
     <a href="#argentina">Argentina</a>
@@ -82,35 +82,17 @@
       </div>
     </div>
 
-    <!-- LATEST: CUCHI CUCHI -->
-    <section class="new" id="cuchi">
-      <div class="new__text">
-        <p class="eyebrow"><span class="new__dot"></span>Lo último · Nuevo tema</p>
-        <h2 class="new__title">Cuchi<br>Cuchi</h2>
-        <ul class="new__facts mono">
-          <li><b>08.10.2026</b> Salió la misma noche que Dei V pisó Argentina por primera vez</li>
-          <li><b>Producción</b> Gaby Music · PUKA</li>
-          <li><b>2:37</b> Vuelta al trap, el género que lo hizo conocido</li>
-          <li><b>EP</b> Tema 2 de LICORISH, el que escuchó toda Argentina</li>
-        </ul>
-        <div class="hero__cta">
-          <button class="btn btn--light" data-yt="NBCY7XWQyRE">Ver el video</button>
-          <a class="btn btn--ghost" href="https://open.spotify.com/search/Dei%20V%20Cuchi%20Cuchi" target="_blank" rel="noopener">Escuchar</a>
+    <!-- LATEST: slider con los 3 estrenos más nuevos (se arma desde data.js) -->
+    <section class="new" id="nuevo" aria-roledescription="carousel" aria-label="Lo último de Dei V">
+      <div class="new__bar">
+        <p class="eyebrow"><span class="new__dot"></span>Lo último</p>
+        <div class="new__ctrl">
+          <button class="new__arrow" aria-label="Estreno más nuevo">‹</button>
+          <span class="new__count mono" aria-live="polite"></span>
+          <button class="new__arrow" aria-label="Estreno anterior">›</button>
         </div>
       </div>
-      <button class="new__media" data-yt="NBCY7XWQyRE" aria-label="Ver el video de Cuchi Cuchi">
-        <img src="assets/cuchi/cover1.jpg" alt="Portada oficial de Cuchi Cuchi: Dei V con campera roja sobre fondo azul">
-        <span class="new__play" aria-hidden="true">▶</span>
-      </button>
-      <div class="new__reel" aria-label="Escenas del video de Cuchi Cuchi">
-        <figure><video src="assets/cuchi/clip1.mp4" poster="assets/cuchi/clip1.jpg" muted loop playsinline preload="none" data-autoplay></video></figure>
-        <figure><img src="assets/cuchi/cover3.jpg" alt="Dei V apoyado en los lockers junto a una chica" loading="lazy"></figure>
-        <figure><video src="assets/cuchi/clip2.mp4" poster="assets/cuchi/clip2.jpg" muted loop playsinline preload="none" data-autoplay></video></figure>
-        <figure><video src="assets/cuchi/clip3.mp4" poster="assets/cuchi/clip3.jpg" muted loop playsinline preload="none" data-autoplay></video></figure>
-        <figure><img src="assets/cuchi/cover4.jpg" alt="Dei V sentado sobre un pupitre en el aula" loading="lazy"></figure>
-        <figure><video src="assets/cuchi/clip4.mp4" poster="assets/cuchi/clip4.jpg" muted loop playsinline preload="none" data-autoplay></video></figure>
-        <figure><img src="assets/cuchi/cover2.jpg" alt="Portada alternativa de Cuchi Cuchi" loading="lazy"></figure>
-      </div>
+      <div class="new__slides"></div>
     </section>
 
     <!-- TAGLINE REVEAL -->

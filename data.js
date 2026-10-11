@@ -27,7 +27,8 @@ window.DATA = {
   {"y":"2026","t":"Baja Blast Summer Series","d":"Julio. Abre la gira de Mountain Dew y UPROXX en Chicago, con fila a la vuelta de la manzana.","img":"assets/social/tt_7523194497187007775.jpg"},
   {"y":"2026","t":"Tres nominaciones HEAT","d":"Septiembre. Mejor Artista Región Norte, Mejor Colaboración y Mejor Canción para Videojuego, Serie o Película. Gala el 5 de noviembre en Jalisco.","img":"assets/img/press/l1002475.jpg"},
   {"y":"2026","t":"Primera vez en Argentina","d":"Jueves 08.10. Gran apertura del Flavorz Pack y escucha exclusiva de LICORISH con sus fans y el fan club.","img":"assets/img/arg/08.jpg","ar":true,"href":"#argentina"},
-  {"y":"2026","t":"Cuchi Cuchi","d":"Sale la misma noche del 08.10. Vuelta al trap, con video oficial.","yt":"NBCY7XWQyRE","href":"#cuchi"},
+  {"y":"2026","t":"Cuchi Cuchi","d":"Sale la misma noche del 08.10. Vuelta al trap, con video oficial.","yt":"NBCY7XWQyRE","href":"#nuevo"},
+  {"y":"2026","t":"èmó","d":"10 de octubre. Video oficial; abre PALETA, el EP de España.","yt":"0pzNfupqgzg","href":"#nuevo"},
   {"y":"Nov","t":"Flow Fest CDMX","d":"29 de noviembre de 2026, Autódromo Hermanos Rodríguez. Próxima fecha confirmada.","img":"assets/img/press/l1011890.jpg"},
   {"y":"Pronto","t":"LICORISH","d":"EP · Argentina. Lo escuchó antes que nadie, el 08.10. Incluye “Cuchi Cuchi”.","img":"assets/img/eps/licorish.jpg","ar":true,"href":"#musica"},
   {"y":"Pronto","t":"PALETA","d":"EP · España. Seis temas; abre con “èmó”, ya en YouTube.","img":"assets/img/eps/paleta.jpg","ar":true,"href":"#musica"},
@@ -176,6 +177,10 @@ window.DATA = {
   {"v":1,"prefix":"#","l":"en España con su álbum debut ¿Quién es Dei V? y con “Badgyal”"},
   {"v":20000,"l":"personas en el Movistar Arena de Madrid, 6 de marzo de 2026"},
   {"v":51,"suffix":"M","l":"vistas del freestyle “¿Quién es Dei V?”, el que lo hizo explotar","yt":"h8f64lb_kn8"}
+ ],
+ "releases": [
+  {"id":"0pzNfupqgzg","t":"èmó","date":"2026-10-10","accent":"#ff8ad8","facts":[["10.10.2026","Estreno del video oficial"],["2:23","Duración del video"],["EP","Tema 1 de PALETA, el EP de España"]],"cover":"https://i.ytimg.com/vi/0pzNfupqgzg/maxresdefault.jpg","coverAlt":"Portada de èmó: Dei V agachado junto a una llanta dorada","reel":[{"i":"https://i.ytimg.com/vi/0pzNfupqgzg/hq1.jpg","a":"Fotograma 1 del video de èmó"},{"i":"https://i.ytimg.com/vi/0pzNfupqgzg/hq2.jpg","a":"Fotograma 2 del video de èmó"},{"i":"https://i.ytimg.com/vi/0pzNfupqgzg/hq3.jpg","a":"Fotograma 3 del video de èmó"},{"i":"assets/img/eps/paleta.jpg","a":"Tracklist de PALETA: 1 èmó, 2 Rompe Cabeza con XAED, 3 Tabacco, 4 Una de una con Myke Towers y Nicky Jam, 5 Bombon con Galeno, 6 Lonely"}]},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","date":"2026-10-08","accent":"#ff3b3b","facts":[["08.10.2026","Salió la misma noche que Dei V pisó Argentina por primera vez"],["Producción","Gaby Music · PUKA"],["2:37","Vuelta al trap, el género que lo hizo conocido"],["EP","Tema 2 de LICORISH, el que escuchó toda Argentina"]],"listen":"https://open.spotify.com/search/Dei%20V%20Cuchi%20Cuchi","cover":"assets/cuchi/cover1.jpg","coverAlt":"Portada oficial de Cuchi Cuchi: Dei V con campera roja sobre fondo azul","reel":[{"v":"assets/cuchi/clip1.mp4","p":"assets/cuchi/clip1.jpg"},{"i":"assets/cuchi/cover3.jpg","a":"Dei V apoyado en los lockers junto a una chica"},{"v":"assets/cuchi/clip2.mp4","p":"assets/cuchi/clip2.jpg"},{"v":"assets/cuchi/clip3.mp4","p":"assets/cuchi/clip3.jpg"},{"i":"assets/cuchi/cover4.jpg","a":"Dei V sentado sobre un pupitre en el aula"},{"v":"assets/cuchi/clip4.mp4","p":"assets/cuchi/clip4.jpg"},{"i":"assets/cuchi/cover2.jpg","a":"Portada alternativa de Cuchi Cuchi"},{"i":"assets/img/eps/licorish.jpg","a":"Tracklist de LICORISH: 1 Candy Man, 2 Cuchi Cuchi, 3 Underwa, 4 Halloween con Juanka y Kendo, 5 Juansoto"}]}
  ],
  "seen": [
   "infobaedeivlaestrelladeunanuevageneraciondelamusicaurbanaapadrinadaporbadbunnyelconejoesunejemploaseguirparatodos",
