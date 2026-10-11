@@ -35,20 +35,20 @@ window.DATA = {
   {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. El tracklist y el primer tema, pronto.","img":"assets/img/arg/n03.jpg","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":5069},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":213609},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":114810874},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177614556},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51456786},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":61967732},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59374724},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58049712},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50658142},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45237342},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30087086},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4947116},
-  {"id":"vekhcnBKgXA","t":"Underwater","m":"visualizer · 2025","views":1564760},
-  {"id":"P9a6Za0tDgI","t":"Llegará","m":"Underwater Version · 2020","views":2698206}
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":20553},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":220927},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":114823476},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177623312},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51458660},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":61972736},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59379042},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58051410},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50661348},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45238692},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30091071},
+  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4947629},
+  {"id":"vekhcnBKgXA","t":"Underwater","m":"visualizer · 2025","views":1564987},
+  {"id":"P9a6Za0tDgI","t":"Llegará","m":"Underwater Version · 2020","views":2698414}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -139,6 +139,8 @@ window.DATA = {
   ["2025-04","LOS40","Dei V cumple el sueño de un fan en su concierto en Madrid e invita a Omar Montes y Clarent","https://news.google.com/rss/articles/CBMivAFBVV95cUxOajN4NTJLSVpfc1AyWldNRU1PV0lkYjZ4bjJSZHRzWVlpcjhSVEFuTFVYX000VjBPYmdYSTJybG5ZZmdsZDI0MWNMQkZPa0N1OTRUSFVscTJtbm53eGkySXJXVEh1a2hxYjh0VGFEQnNJdEVwYWhLMHVJRF9nVFVhckNlcW1PZkNNb2xQUDBCQkYyWnd1SHhQYlE1cEh3ZWlxZTZkbzEwNThzWUZXbTBkMFBSQlY1eVB6c3V1b9IB0AFBVV95cUxQRHZRZUNGREdRWDJVbzZZcl9TRTJCZHE1SllhS2p5ZFNEWDlzbmc3ZmdFMmdXTHhOM0VPMVNNZzgySl8yNGZGd2t0QVAxOHRFSDZPN192Q3pfOGlRbGUxMjU5VU5Xb1RFUUZGamlhVWJONVRLQ1gzdVlRcnI1M2czZXJULXp0cmx3TDgzQ3g3b0dKWUk2RFRPZ2diclhoVWJRU0RzMXhoaF9rdzJjX1ZGRWVDMzRBSGRWX1JSTHQ5MWtGcHFPMExURk5ES2FYSmtI?oc=5","show"],
   ["2025-04","LOS40","Eladio Carrión monta una fiesta con Quevedo, Clarent, Omar Montes Ibai Llanos y Dei V y desvela el tracklist de 'DON KBRN'","https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLU1KTlNXZ2pxdlk3VFF3TVNMSTdaeWZndGFQT3dDenp0empqVHBqVUtzVkI1MGtjVm1uREJHRlZGM2pLZGNYUGNQMVZ4cmJBazdTLU1BMElfSmpocVM5alFtanZ2T2FYUzZEc01INjM5ODg2RGJ1eWFvYmxtem9VYl85cFJKakpYc1ZGRGRQbHh3eFZjX1Bxd2JNOFVXSEFlTk1GampWbld3VGh5WHVveXVmbVdVbERiZnNrYVNXd3F2MnR6S2k5Z3RCVXBKOEFHWFBoS3Z3N2hybHRROXJITk42NjJrOFFmWUYtNtIBgAJBVV95cUxPX0dQcFQtdVAtY1ZVeTRWZG52amVGRml3QkM1Rks4VDhEMVEzY1dwMkRfd1pyWWJuTkZPSVFYMk5sdHlFdFNjQl82NkpCelJyN045bHBxVnFyOXMxTDFWa3ZSWmlJSjNjSVJsQllqOXdrbVRBbmZaM0JZT3prbDFGVTEwOWx0bUtCaVAwcWpRdnZuYXZyZWt3TU94UEJ6RENOalBvMU5FbVo2aFd2SDcwT1AwQXFkaTh6ZjdiT3kwcldqRjZqS0tiZTl2NGU1b2p4bmhQMDFiMWdlMG81OXdxTnRCQVdxZlZvTDlrdTJQeEpRLU9iV1ItUkRIM0tFNWhF?oc=5","noticia"],
   ["2025-04","Elplural.com","¿Quién es Dei V? El artista que revoluciona el trap latino en España","https://news.google.com/rss/articles/CBMioAFBVV95cUxOX21LeHpXaW9wS2lzNzNwdm9fQU94OHFJUVVwVHZrZ1VYTU5EengteVdHT1IzQTg2UmZvYWUwZWFIcHZHZUVyb0wtazZvYm9KaThocmhSdkp3TzdPWjJoTjdaQ2NURjNyak1MNVN2OFhnajBUZUhIRHY1R05ZVEdtUERWZmR1dHhWVmhhSWsxTU10RU1mLTNPM29mb2VNTlBw0gGmAUFVX3lxTE9UcVVocEgxODk1cG9qNFFndHZGMlRZM2dycUlkV3RHSkxJWFdTUFdrd1FwQ3ZSWG9hb1lkb01INEVZc0FxNzJ0SjNHVDBla3c5ZDMwNHN5dVBvbVgwX1ZFMjdOT2FPRHZMZHdiX25jeXNyN294VWNQbzJxM2pzZlhCYmVXM3pTXzF4S3E0TkRqRW9PME42MW5QZmJDQzZaVnhqcmVud0E?oc=5","noticia"],
+  ["2025-04","Atlántico Hoy","Feid, Jason Derulo y Dei V cierran el cartel del Granca Live Fest","https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWGNlV2EtZVM5bF96TWIyOTJ5dDMybHUzOGxxckVWR1VLNHVwSno4LUhHUExHRWV0bHU1ZTdkY2lzVVFQSEcyNTV5dDhmT1hkYnpJVTZ5UXhreVVRN1NPNXVfdDFyclFpY3FWQ2dwTDF4U1VLVkdHZXV1ZGdRbWpQaFN4RXlEYmVtcUowT0YzOUtNTG5WQnF2R0NUUXRLbGZEaW92Y2xQU3c2UlU?oc=5","show"],
+  ["2025-04","El Nacional — La voz de todos","Puertorriqueño Dei V llega “bendecido” a España con el aval de Bad Bunny","https://news.google.com/rss/articles/CBMimwFBVV95cUxQdklBeUVKQlQ1YjlvSGZiOGc2RnJMNzdGTVpwSElqMEhwWkxfYnRxSkw5NGtsREt4QW9mb3dUbktENGdJSHpJUk5LMGpiV2hhempMd1RyT2lRSTg3czAtQUxPQVc2eTBtSlJWQXI5LVBoUGRvX01uYnZLeVJrZE9HYy02OFBpTVlqQ2s2anpidzdGbDg0d0tpdWpRb9IBoAFBVV95cUxQN25jZXNnUHdya2FSWTJOc0ZfY2haV0lBdmVMTkZWQ2dIckNJb2JrSXlZRlAwQ0FUSTJxRHE4TExtZjF3Q2tXUDFaaVZJTlhicEpUcEtCTVNtejhFQmhHSEt1MnNqdWI3d3pSRUw0WUIxRUZhMVU3Y0RlVTRoOWJEalEtdVM3ME5IMjZOVl80QzB4YlZJRndIV2ZFWFJ2dGNR?oc=5","noticia"],
   ["2025-03","LOS40","Para muchos, Dei V acaba de lanzar el \"EP del año\": 'Los Flavorz'","https://news.google.com/rss/articles/CBMikwFBVV95cUxOS1BqVXE5V3o2eUNtaWFLaTJiSlBIZG9mWUlGN3BnQ0pOcXZydGVLNmpLcHF5NG9VaXBDTjNTUUhxTVRUQ1c3ZVBrSDJaVzcwLVFVRy1JT3VZMm41Vnd6Zm1pTkRiU2U0d0RSdUw1SW4tdlFMaE5LYXZWSkx3TW9fcHFmLVZBdHYwV1lCX19hYThBaFU?oc=5","lanzamiento"],
   ["2025-03","Diario de México","Dei V plasma en su nuevo EP 'Los Flavorz' una poderosa reflexión sobre su camino artístico","https://news.google.com/rss/articles/CBMixAFBVV95cUxPamFLN3Fpc2UtN1NONnVhOVZHc0ZwUmVXUTV6bXduY2dCYXBMYks5dnlTbjB0SjhiZms1X3lqQzhYcEM3cmdFQXVhVE9BMFpQZ0lSckt1Sm5GVzJFcTdlb0J1Ukkya0lDbWZ0X19PaVdFZUtvX1lOb29kamR5akdlZ0hPVWkyRHhHaktFUDlZSVI5X2NLX2ZBMUVsZmFuN3J5WW9maF9HS0oyWHM5VjdnWjZPdTFiamNBcmdlU2lNZVJ6cTFh0gHKAUFVX3lxTE9QZ3VoTmlZWEtLV1NieUl2NEpERjR2bEJmTUVnX3REV25fcGo2Z2Z2M2dLdnZtS0p3UzF2TER5cld1c08xOVlOc2VPa0ZqNnZXMXI2MUVObkxGa25naGF0QUhDSC12RUtGUklwTHNnM3BRYWhBbHo3TXJyU3dWOFA1UF9LZ1N5VGhZMDJCZTk4SU9wcy1VbDNLQ1FrdUpPcFFhNFhuWERpNzQ2dmd3aFN6dV9iVUpBV2d1a3FNOGJGTGZRTzFhdmJycFE?oc=5","noticia"],
   ["2025-03","La República EC","El reguetonero Dei V reflexiona sobre su camino en ‘Los Flavorz’","https://news.google.com/rss/articles/CBMiqgFBVV95cUxONE9LallIMzg2THJ1YVptNW52WDk5bGpzbnd3UzItcklwTWpRWVYtaVptOEt0eHprT3J4by04ZGdwY09WbUhGeG9UbTlZRHR4akZ0X2hWWmxtekVKRm0zQ1pfWUhsUkNlX1UxNmpuZW5EMW1XU3loQV9XSTE2TlFrZ1dyOVoxaTdnbFF2QTJvS0JkYzhyS3FHZ0xfU3NzTXFOd1ozT0FfcFBOZw?oc=5","noticia"],
@@ -159,6 +161,10 @@ window.DATA = {
   ["2025-03","Pollstar","Puerto Rican star Dei V unveils dates for Los Flavorz tour","https://news.pollstar.com/2025/03/07/puerto-rican-star-dei-v-unveils-dates-for-los-flavorz-tour/","show"],
   ["2025-03","Rolling Stone","Dei V unveils track list for surprise EP “Los Flavorz”","https://www.rollingstone.com/music/music-latin/dei-v-unveils-los-flavorz-track-list-surprise-ep-1235302127/","lanzamiento"],
   ["2024-10","Billboard Latin Music Week","Dei V, speaker de la edición 2024","https://www.billboardlatinmusicweek.com/2024/speaker/1360013/dei-v","hito"],
+  ["2024-10","Miami New Times","Dei V Pushes Forward a New Generation of Latin Trap","https://news.google.com/rss/articles/CBMisgFBVV95cUxPSFpJMTdmWFhNSHJ3ZGJHQnBMby1kOUlBQVRlSkdKRmhYbDJaSDhEWnUwNjR2Y3lRa2toNmh1OW5ZMXlwNGotREppcFFUYWxaNDBWaC1YY2JISnNzWDQzQTk0R1Y1Zk1xOEJsa3E0c3I3b215cVdUSTlwOUZ0SXdXeEc3UzJMY0d2MzFFR29FSE1TRzF5LVlWN3RaalJ0S2htWDhmb2JzWjZRbzdVNVZUbC13?oc=5","noticia"],
+  ["2024-09","HIGHXTAR.","Dei V crowns itself in Spain with the premiere of its Gallery Session","https://news.google.com/rss/articles/CBMimgFBVV95cUxOXzhwUVRrSlNiZ3VkZUZYUjdtcExyT0NwdkNuZy15amJGZkhyQVJmTUEyTk5zS0pieWRsdk4ydU04M25vT2s2R3JwcGZzdHZXN0pEdFFKQnNHek9ick1PMUNuNm9RRFJ6S1FodXhaUEF4cllEYTV4YjJ2cTg3UUNaQkE5T0w2aUFMOFZOa2R5SnNHRVNNUlZOeElR?oc=5","noticia"],
+  ["2024-06","The Mirror US","Puerto Rican artist Dei V 'thankful' for his success as new album reached number one","https://news.google.com/rss/articles/CBMifkFVX3lxTE04Rk05TGYxTFhORnQycDItM05rNVlXdWxKUDdrMWJGcVZLdVRQbm5qaW0ybWdqU2Z0YnI2RTNQd3F6RGJPM1ZrV1Yxd1ZpOGlhM2lRdjlMOWNuT3NpQ3hCZjNJdkRCSTh4OElwcjBFa2l3eFVfNk9OSnlWRFpwd9IBgwFBVV95cUxNWTN6RmxDZVhYd0VIZ1cyNTdIeHFTTjFTbS1Gb2FsOFlQYl9wckJacnEtTnBmQ1NNZndscmJHVDE5MGpOamE2TTIta3hjdG9QbUtRQ2E5S2UtaW9hcmdBeUhpNTdkQWZjTWIwUmJSRC1ld281UUJxSXFpcEFJX05CNE0xTQ?oc=5","lanzamiento"],
+  ["2024-06","Remezcla","INTERVIEW: Dei V Talks Karol G & Bad Bunny Co-Signs & New Album ‘Quién Es Dei V?’","https://news.google.com/rss/articles/CBMirwFBVV95cUxQbGcwZU1FMUxxbUtGLS1pQ0toSS13VUlFUlA1ZW5ub2FxWG9obDhvWHlkTTdKNEwtNmxNY0hKUUEzMDl4bTdqYVZBMUxJMHRyejhiUHhQTlNfQlNHc19HeHNRQTVudEwyYW93NTZBQXpYazg1akFLSy1XNEY0NU1FRVZjNjVUVTZqZkRWVzgtazVNWkZUY2JkWXp3Q1g4OEJEOEhxYUhfNlBFR1lRNldn?oc=5","entrevista"],
   ["2024","Miami New Times","Puerto Rican rapper Dei V talks collaborating with J Balvin, Jhayco","https://www.miaminewtimes.com/music/puerto-rican-rapper-dei-v-talks-collaborating-with-j-balvin-jhayco-21650749/","entrevista"],
   ["2024-06","Remezcla","Dei V talks Karol G & Bad Bunny co-signs & new album “Quién Es Dei V?”","https://remezcla.com/features/music/interview-dei-v-talks-karol-g-bad-bunny-co-signs-new-album-quien-es-dei-v/","entrevista"],
   ["2024-06","Rolling Stone","Dei V shares “Quién Es Dei V?” album featuring Myke Towers, Lunay","https://www.rollingstone.com/music/music-latin/dei-v-shares-quien-es-dei-v-album-myke-towers-lunay-1235040309/","lanzamiento"],
@@ -166,7 +172,8 @@ window.DATA = {
   ["2024","Rolling Stone en Español","Dei V y el nuevo sonido del urbano","https://es.rollingstone.com/dei-v-y-el-nuevo-sonido-del-urbano/","entrevista"],
   ["2024","25 Gramos","Dei V: disciplina y reinvención","https://fleek.25gramos.com/entrevistas/dei-v-disciplina-y-reinvencion/","entrevista"],
   ["2024-01","Rolling Stone","19 Latin artists we’re rooting for in 2024","https://www.rollingstone.com/music/music-lists/19-latin-artists-2024-breakout-1234944682/rainao-1234944814/","hito"],
-  ["2024-01","Spotify Newsroom","Viva Latino Artists to Watch 2024","https://newsroom.spotify.com/tag/dei-v","hito"]
+  ["2024-01","Spotify Newsroom","Viva Latino Artists to Watch 2024","https://newsroom.spotify.com/tag/dei-v","hito"],
+  ["2023-06","Creative Loafing Tampa Bay","Emerging Puerto Rican reggaeton rapper Dei V plays Tampa this weekend","https://news.google.com/rss/articles/CBMisAFBVV95cUxNb28xZk94b1lCSkRnTk5yVTdENkptbTJxRk1TMS0xdmdaOWlESXNFbUpxUlk5T1RYTVZKT0pDMkMwU3pfX0pkNTVvOTVvay1oYUVULVlWOHpEb2hRS3pZWDhjLThWVGx2azVLMzQ0V2dwOEEzWHhNUVlDME1zTldHTU1fTkZ1RVJUbnVNcUxKVzhJNFpaLWotMm0zYndjWUgxVklkSzdjLTI3X3dvbHBMQw?oc=5","noticia"]
  ],
  "peek": [
   "assets/img/press/l1002465.jpg",
@@ -285,7 +292,14 @@ window.DATA = {
   "larepublicaecelreguetonerodeivreflexionasobresucaminoenlosflavorz",
   "mundodeportivodeivestrenasunuevoeplosflavorz",
   "highxtardeivseuneaomarmontesyovyonthedrumsenohbaby",
-  "los40eladiocarrionmontaunafiestaconquevedoclarentomarmontesibaillanosydeivydesvelaeltracklistdedonkbrn"
+  "los40eladiocarrionmontaunafiestaconquevedoclarentomarmontesibaillanosydeivydesvelaeltracklistdedonkbrn",
+  "atlanticohoyfeidjasonderuloydeivcierranelcarteldelgrancalivefest",
+  "elnacionallavozdetodospuertorriquenodeivllegabendecidoaespanaconelavaldebadbunny",
+  "creativeloafingtampabayemergingpuertoricanreggaetonrapperdeivplaystampathisweekend",
+  "miaminewtimesdeivpushesforwardanewgenerationoflatintrap",
+  "remezclainterviewdeivtalkskarolgbadbunnycosignsnewalbumquienesdeiv",
+  "highxtardeivcrownsitselfinspainwiththepremiereofitsgallerysession",
+  "themirroruspuertoricanartistdeivthankfulforhissuccessasnewalbumreachednumberone"
  ],
  "updated": "2026-10-11"
 };
