@@ -270,16 +270,32 @@ div.card__thumb::after { display: none; }
 
 /* Music */
 .mus { position: relative; z-index: 2; padding: 128px var(--pad); }
-.mus__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.mus__eyebrow { margin-top: 48px; }
+.mus__series, .mus__grid { display: grid; gap: 16px; margin-top: 16px; }
+.mus__series { grid-template-columns: repeat(3, 1fr); }
+.mus__grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.mus__grid .rec h3 { font-size: 28px; line-height: 32px; }
 .rec { padding: 32px; border-radius: 24px; background: var(--bg-2); border: 1px solid var(--line); min-height: 280px; display: flex; flex-direction: column; gap: 12px; justify-content: flex-end; transition: transform .7s var(--ease), border-color .7s var(--ease), background .7s var(--ease); }
 .rec:hover { transform: translateY(-6px) rotate(-.5deg); border-color: var(--aqua); background: #0b1418; }
 .rec .mono { color: var(--aqua); font-size: 14px; }
 .rec h3 { font-size: 36px; line-height: 40px; letter-spacing: -.02em; }
 .rec p:last-child { color: #bdbdbd; }
-.rec--new { border-color: var(--celeste); background: #0d1a24; }
-.rec--new .mono { color: var(--sol); }
+/* Próximamente: la serie de EPs */
+.soon { display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; background: var(--bg-2); border: 1px solid var(--line); transition: transform .7s var(--ease), border-color .7s var(--ease); }
+.soon:hover { transform: translateY(-6px); border-color: var(--sol); }
+.soon__fig { position: relative; aspect-ratio: 1; background: #000; }
+.soon__art { display: block; width: 100%; height: 100%; object-fit: cover; }
+.soon__art--tbd { display: grid; place-items: center; font-size: clamp(32px, 3.4vw, 48px); line-height: 1; font-weight: 700; letter-spacing: -.03em; color: var(--ink-soft); background: var(--bg-2); }
+.soon__tag { position: absolute; left: 16px; top: 16px; font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #000; background: var(--sol); padding: 4px 12px; border-radius: 999px; }
+.soon__body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px; }
+.soon__body .mono { color: var(--sol); font-size: 14px; }
+.soon__body h3 { font-size: 36px; line-height: 40px; letter-spacing: -.02em; }
+.soon__body p:not(.mono) { color: #bdbdbd; }
+.soon__body .btn { margin-top: auto; }
+.soon--tbd { border-style: dashed; background: transparent; }
+.soon--tbd .soon__body .mono { color: var(--ink-soft); }
 .mus__links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
-@media (max-width: 860px) { .mus__grid { grid-template-columns: 1fr; } .rec { min-height: 200px; } }
+@media (max-width: 860px) { .mus__series { grid-template-columns: 1fr; } .rec { min-height: 200px; } }
 
 /* Videos */
 .vid { position: relative; z-index: 2; padding: 64px var(--pad) 128px; }
@@ -301,6 +317,17 @@ div.card__thumb::after { display: none; }
 .chip:hover { color: #fff; border-color: #fff; }
 .chip:active { transform: scale(.98); }
 .chip.is-on { background: #fff; color: #000; border-color: #fff; }
+.press__q { grid-column: 1 / -1; width: min(100%, 420px); font: inherit; font-size: 16px; line-height: 24px; color: #fff; background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px; padding: 12px 24px; transition: border-color .5s var(--ease); }
+.press__q::placeholder { color: var(--ink-soft); }
+.press__q:hover { border-color: #5a5a5a; }
+.press__q:focus-visible { border-color: var(--aqua); }
+.chip:disabled { opacity: .35; pointer-events: none; }
+.press__foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px 24px; margin-top: 24px; }
+.press__info { color: var(--ink-soft); font-size: 14px; line-height: 20px; }
+.press__pager { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.press__pager[hidden] { display: none; }
+.press__pager .chip { min-width: 40px; padding-inline: 12px; }
+.press__gap { color: var(--ink-soft); padding: 0 4px; }
 .press__list { list-style: none; border-top: 1px solid var(--line); }
 .press__list li[hidden] { display: none; }
 .press__list a { display: grid; grid-template-columns: 96px 200px 1fr 112px 24px; gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); text-decoration: none; transition: padding .7s var(--ease), color .7s var(--ease), background .7s var(--ease); }
@@ -335,6 +362,10 @@ div.card__thumb::after { display: none; }
 .tt:hover img { transform: scale(1.06); }
 .tt::before { content: "▶"; position: absolute; z-index: 1; right: 16px; top: 16px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: #fff; color: #000; font-size: 14px; }
 .tt span { position: absolute; left: 0; right: 0; bottom: 0; padding: 48px 16px 16px; font-size: 14px; line-height: 20px; font-weight: 600; background: linear-gradient(transparent, rgba(0,0,0,.85)); }
+/* Instagram: el embed de perfil siempre muestra lo último publicado, sin script ni claves */
+.soc__ig { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 48px; }
+.soc__ig figure { display: flex; flex-direction: column; gap: 12px; width: min(100%, 440px); }
+.soc__ig iframe { width: 100%; height: 480px; border: 0; border-radius: 24px; background: #fff; }
 .soc__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
 .soc__col { display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 24px; background: var(--bg-2); border: 1px solid var(--line); }
 .soc__col .eyebrow { margin-bottom: 8px; }

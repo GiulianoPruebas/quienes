@@ -30,18 +30,32 @@ const kind = t =>
   : /lanza|estrena|álbum|album|sencillo|single|tema|v[ií]deo|colabora|se unen|revolucionan/i.test(t) ? 'lanzamiento'
   : 'noticia';
 
-// 1) videos nuevos del canal (el feed mezcla Shorts: se descartan los que tienen #hashtags)
-await step('videos nuevos', async () => {
+// 1) videos nuevos del canal: lo que esté por ENCIMA del video más nuevo que ya tenemos.
+//    Fuente 1: la página del canal (no trae Shorts). Fuente 2: el feed RSS, que YouTube a veces devuelve 404.
+const channelVideos = async () => {
+  try {
+    const html = await get(`https://www.youtube.com/channel/${CHANNEL}/videos`);
+    const out = [];
+    (function walk(o) {
+      if (!o || typeof o !== 'object') return;
+      if (o.lockupViewModel?.contentId) out.push({ id: o.lockupViewModel.contentId, t: o.lockupViewModel.metadata?.lockupMetadataViewModel?.title?.content ?? '' });
+      Object.values(o).forEach(walk);
+    })(JSON.parse(html.match(/var ytInitialData = (\{.*?\});<\/script>/)[1]));
+    if (out.length) return out; // más nuevo primero
+  } catch {}
   const feed = await get(`https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL}`);
+  return [...feed.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({ id: tag(m[1], 'yt:videoId'), t: text(tag(m[1], 'title')) })).filter(v => !v.t.includes('#')); // el feed mezcla Shorts
+};
+await step('videos nuevos', async () => {
   const known = new Set(D.videos.map(v => v.id));
-  const fresh = [...feed.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => m[1])
-    .map(e => ({ id: tag(e, 'yt:videoId'), t: text(tag(e, 'title')), views: +(e.match(/statistics views="(\d+)"/) || [])[1] || 0 }))
-    .filter(v => !v.t.includes('#') && !known.has(v.id));
+  const all = await channelVideos();
+  const at = all.findIndex(v => known.has(v.id));
+  const fresh = (at < 0 ? all : all.slice(0, at)).slice(0, 3); // tope: si no reconoce ninguno, no mete todo el canal
   for (const v of fresh.reverse()) {
-    D.videos.unshift({ id: v.id, t: v.t.replace(/^Dei V\s*[-–]\s*/, '').replace(/\s*\((Video Oficial|Official Video|Official Visualizer|Visualizer)\)/i, ''), m: 'nuevo', views: v.views });
+    D.videos.unshift({ id: v.id, t: v.t.replace(/^Dei V\s*[-–]\s*/, '').replace(/\s*[(\[](Video Oficial|Official Video|Official Visualizer|Visualizer)[)\]]/i, ''), m: 'nuevo' });
     log.push(`+ video: ${v.t}`);
   }
-  D.videos.splice(MAX_VIDEOS);
+  D.videos.splice(MAX_VIDEOS); // las vistas las completa el paso siguiente
 });
 
 // 2) vistas al día (videos y los números de la sección "Números" que tienen yt)

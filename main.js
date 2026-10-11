@@ -11,7 +11,9 @@
   const { timeline: TIMELINE, videos: VIDEOS, quotes: QUOTES, press: PRESS, peek: PEEK, tiktoks: TIKTOKS, nums: NUMS, updated: UPDATED } = window.DATA;
   const yt = id => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
-  const short = n => (n >= 1e6 ? Math.floor(n / 1e6) + 'M' : n >= 1e3 ? Math.floor(n / 1e3) + 'K' : '' + n);
+  // los títulos vienen de terceros (Google News, YouTube): se escapan antes de entrar al HTML
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const short = n =>(n >= 1e6 ? Math.floor(n / 1e6) + 'M' : n >= 1e3 ? Math.floor(n / 1e3) + 'K' : '' + n);
 
   /* ---------- build DOM from data ---------- */
   $('.nums').innerHTML = NUMS.map(n =>
@@ -27,21 +29,52 @@
   }).join('');
 
   $('.vid__grid').innerHTML = VIDEOS.map(({ id, t, m, views }, i) =>
-    `<button class="yt" data-yt="${id}" aria-label="Ver ${t}"><img src="https://i.ytimg.com/vi/${id}/${i === 0 ? 'maxresdefault' : 'hqdefault'}.jpg" onerror="this.onerror=null;this.src='${yt(id)}'" alt="" loading="lazy"><span><small>${m}${views ? ' · ' + short(views) : ''}</small>${t}</span></button>`
+    `<button class="yt" data-yt="${esc(id)}" aria-label="Ver ${esc(t)}"><img src="https://i.ytimg.com/vi/${esc(id)}/${i === 0 ? 'maxresdefault' : 'hqdefault'}.jpg" onerror="this.onerror=null;this.src='${yt(esc(id))}'" alt="" loading="lazy"><span><small>${esc(m)}${views ? ' · ' + short(views) : ''}</small>${esc(t)}</span></button>`
   ).join('');
 
-  /* ---------- press list + filters + hover peek ---------- */
+  /* ---------- press list: ordenada, filtrada (tipo + texto) y paginada ---------- */
+  const PAGE = 5;
   const MONTHS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
   const pdate = d => { const [y, m] = d.split('-'); return m ? `${MONTHS[+m - 1]} ${y}` : y; };
-  const pList = $('.press__list');
-  pList.innerHTML = PRESS.map(([d, o, t, u, k], i) =>
-    `<li data-k="${k}" data-peek="${PEEK[i % PEEK.length]}"><a href="${u}" target="_blank" rel="noopener"><span class="mono">${pdate(d)}</span><b>${o}</b><em>${t}</em><i class="mono">${k}</i><span aria-hidden="true">↗</span></a></li>`
+  const dkey = d => (d.length === 4 ? d + '-00' : d); // "2025" sin mes va después de los meses de 2025
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const sorted = [...PRESS].sort((a, b) => dkey(b[0]).localeCompare(dkey(a[0]))); // más nueva primero, sin depender del orden de data.js
+  const pList = $('.press__list'), pPager = $('.press__pager'), pInfo = $('.press__info'), pQ = $('.press__q');
+  pList.innerHTML = sorted.map(([d, o, t, u, k], i) =>
+    `<li data-k="${esc(k)}" data-q="${esc(norm(o + ' ' + t))}" data-peek="${PEEK[i % PEEK.length]}"><a href="${esc(u)}" target="_blank" rel="noopener"><span class="mono">${pdate(d)}</span><b>${esc(o)}</b><em>${esc(t)}</em><i class="mono">${esc(k)}</i><span aria-hidden="true">↗</span></a></li>`
   ).join('');
+  const pItems = $$('li', pList), pState = { f: 'all', q: '', page: 1 };
+  const renderPress = (refresh = true) => {
+    const q = norm(pState.q.trim());
+    const hits = pItems.filter(li => (pState.f === 'all' || li.dataset.k === pState.f) && (!q || li.dataset.q.includes(q)));
+    const pages = Math.max(1, Math.ceil(hits.length / PAGE));
+    pState.page = Math.min(pState.page, pages);
+    const from = (pState.page - 1) * PAGE;
+    pItems.forEach(li => (li.hidden = true));
+    hits.slice(from, from + PAGE).forEach(li => (li.hidden = false));
+    pInfo.textContent = hits.length ? `Mostrando ${from + 1}–${Math.min(from + PAGE, hits.length)} de ${hits.length} notas` : 'No hay notas con ese filtro. Probá con otra palabra o elegí “Todas”.';
+    // ‹ 1 … 4 5 6 … 15 ›
+    const nums = [...new Set([1, pState.page - 1, pState.page, pState.page + 1, pages])].filter(p => p >= 1 && p <= pages).sort((a, b) => a - b);
+    pPager.hidden = pages < 2;
+    pPager.innerHTML =
+      `<button class="chip" data-p="${pState.page - 1}" aria-label="Página anterior"${pState.page === 1 ? ' disabled' : ''}>‹</button>` +
+      nums.map((p, i) => (i && p - nums[i - 1] > 1 ? '<span class="press__gap" aria-hidden="true">…</span>' : '') +
+        `<button class="chip${p === pState.page ? ' is-on' : ''}" data-p="${p}" aria-label="Página ${p}"${p === pState.page ? ' aria-current="page"' : ''}>${p}</button>`).join('') +
+      `<button class="chip" data-p="${pState.page + 1}" aria-label="Página siguiente"${pState.page === pages ? ' disabled' : ''}>›</button>`;
+    if (refresh && typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh(); // cambió el alto de la página
+  };
   $$('.press__filters .chip').forEach(c => c.addEventListener('click', () => {
     $$('.press__filters .chip').forEach(x => x.classList.toggle('is-on', x === c));
-    $$('li', pList).forEach(li => (li.hidden = c.dataset.f !== 'all' && li.dataset.k !== c.dataset.f));
-    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+    pState.f = c.dataset.f; pState.page = 1; renderPress();
   }));
+  pQ.addEventListener('input', () => { pState.q = pQ.value; pState.page = 1; renderPress(); });
+  pPager.addEventListener('click', e => {
+    const b = e.target.closest('[data-p]'); if (!b || b.disabled) return;
+    pState.page = +b.dataset.p; renderPress();
+    const top = pList.getBoundingClientRect().top + scrollY - 140; // vuelve al comienzo de la lista
+    lenis ? lenis.scrollTo(top, { duration: 1 }) : scrollTo({ top, behavior: 'smooth' });
+  });
+  renderPress(false);
   const peek = $('.press__peek');
   pList.addEventListener('pointerover', e => {
     const li = e.target.closest('li'); if (!li) return;

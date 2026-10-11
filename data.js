@@ -12,12 +12,12 @@ window.DATA = {
   {"y":"2023","t":"Gatita Gangster","d":"Con Karol G, en Mañana Será Bonito. Ese año lo nominan como Top Artista Trap en Premio Tu Música Urbano.","yt":"Hsoto13vPlI"},
   {"y":"2023","t":"Narcotics","d":"Con Bryant Myers. Su video más visto: 177 millones.","yt":"oujzyZfQF94"},
   {"y":"2023","t":"Bad Bunny lo nombra","d":"Bad Bunny lo menciona en “Vuelve Candy B”, de Nadie Sabe Lo Que Va a Pasar Mañana. Después comparte “Dame Lu” en sus historias.","img":"assets/img/press/l1002412.jpg"},
-  {"y":"2024","t":"Artista a seguir","d":"Rolling Stone lo pone entre los 19 artistas latinos de 2024 y Spotify lo elige para Viva Latino Artists to Watch.","img":"assets/social/commons2.jpg"},
+  {"y":"2024","t":"Artista a seguir","d":"Rolling Stone lo pone entre los 19 artistas latinos de 2024 y Spotify lo elige para Viva Latino Artists to Watch.","img":"assets/img/press/l1001979.jpg"},
   {"y":"2024","t":"Martini","d":"Abril. Platino en España y 59 millones de vistas.","yt":"bk5RwmOwyy4"},
   {"y":"2024","t":"Badgyal","d":"Con Saiko y JC Reyes. Número uno en España y triple Platino.","yt":"_WHBVsQnrFc"},
   {"y":"2024","t":"¿Quién es Dei V?, el álbum","d":"14 de junio. 16 temas y número uno en España, por encima de DELLAFUENTE.","img":"assets/img/press/l1001979.jpg"},
   {"y":"2024","t":"De gira con Karol G","d":"Invitado en fechas del Mañana Será Bonito Tour, incluido el Bernabéu. “Fue la primera vez que le canté a miles y miles de personas.”","img":"assets/img/press/l1002465.jpg"},
-  {"y":"2024","t":"Billboard Latin Music Week","d":"Octubre. Panelista en Miami y show en la vitrina de talentos nuevos de J Balvin. En noviembre, La Riviera de Madrid.","img":"assets/social/commons1.jpg"},
+  {"y":"2024","t":"Billboard Latin Music Week","d":"Octubre. Panelista en Miami y show en la vitrina de talentos nuevos de J Balvin. En noviembre, La Riviera de Madrid.","img":"assets/img/press/l1012083.jpg"},
   {"y":"2025","t":"VeLDÁ","d":"Con Bad Bunny y Omar Courtz en Debí Tirar Más Fotos. Puesto 23 del Hot 100, más de mil millones de streams, y en vivo con Benito en su residencia del Choli.","yt":"yNEpyU3PnDI"},
   {"y":"2025","t":"Los Flavorz","d":"27 de marzo. EP con Omar Courtz, De La Rose y Clarent.","yt":"9fzB0X5SRyE"},
   {"y":"2025","t":"Los Flavorz USA Tour","d":"Mayo y junio, diez paradas: Atlanta, Orlando, Miami, Nueva York, Chicago, Montreal, Dallas, Houston, San Diego y Los Ángeles.","img":"assets/img/press/l1012083.jpg"},
@@ -29,7 +29,9 @@ window.DATA = {
   {"y":"2026","t":"Primera vez en Argentina","d":"Jueves 08.10. Gran apertura del Flavorz Pack y escucha exclusiva de LICORISH con sus fans y el fan club.","img":"assets/img/arg/08.jpg","ar":true,"href":"#argentina"},
   {"y":"2026","t":"Cuchi Cuchi","d":"Sale la misma noche del 08.10. Vuelta al trap, con video oficial.","yt":"NBCY7XWQyRE","href":"#cuchi"},
   {"y":"Nov","t":"Flow Fest CDMX","d":"29 de noviembre de 2026, Autódromo Hermanos Rodríguez. Próxima fecha confirmada.","img":"assets/img/press/l1011890.jpg"},
-  {"y":"Próximo","t":"LICORISH","d":"Su tercer álbum. Argentina ya lo escuchó.","img":"assets/img/arg/n02.jpg","ar":true,"href":"#musica"}
+  {"y":"Pronto","t":"LICORISH","d":"EP · Argentina. Lo escuchó antes que nadie, el 08.10. Incluye “Cuchi Cuchi”.","img":"assets/img/eps/licorish.jpg","ar":true,"href":"#musica"},
+  {"y":"Pronto","t":"PALETA","d":"EP · España. Seis temas; abre con “èmó”, ya en YouTube.","img":"assets/img/eps/paleta.jpg","ar":true,"href":"#musica"},
+  {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. El tracklist y el primer tema, pronto.","img":"assets/img/arg/n03.jpg","ar":true,"href":"#musica"}
  ],
  "videos": [
   {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":191871},
@@ -152,13 +154,13 @@ window.DATA = {
  "peek": [
   "assets/img/press/l1002465.jpg",
   "assets/img/press/l1001979.jpg",
-  "assets/social/commons1.jpg",
+  "assets/img/press/l1011713.jpg",
   "assets/img/press/l1002412.jpg",
   "assets/img/press/l1011718.jpg",
   "assets/img/arg/07.jpg",
   "assets/cuchi/cover2.jpg",
   "assets/img/press/l1012782.jpg",
-  "assets/social/commons2.jpg",
+  "assets/img/press/l1002505.jpg",
   "assets/img/press/l1000924.jpg"
  ],
  "tiktoks": [
