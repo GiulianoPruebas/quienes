@@ -261,6 +261,18 @@ div.card__thumb::after { display: none; }
 .arg__n { position: absolute; right: var(--pad); bottom: 44px; color: var(--ink-soft); font-size: 14px; }
 @media (max-width: 860px) { .arg__stack img { width: 92vw; } .arg__caps { right: 80px; font-size: 18px; } }
 
+/* Celular y tablet: la línea de tiempo y las fotos de Argentina se deslizan de costado (sin frenar la página) */
+@media (pointer: coarse) {
+  .tl__track { width: auto; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; padding-bottom: 8px; }
+  .tl__track::-webkit-scrollbar, .arg__stack::-webkit-scrollbar { display: none; }
+  .card { scroll-snap-align: center; }
+  .arg__pin { height: auto; overflow: visible; padding-bottom: 96px; }
+  .arg__stack { position: relative; inset: auto; display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-inline: var(--pad); }
+  .arg__stack img { position: static; margin: 0; flex: none; width: auto; max-width: 86vw; height: min(62svh, 560px); scroll-snap-align: center; }
+  .arg__caps { position: relative; inset: auto; height: 84px; margin: 24px var(--pad) 0; }
+  .arg__n { position: static; display: block; margin: 8px var(--pad) 0; text-align: right; }
+}
+
 /* Fan club */
 .fc { position: relative; z-index: 2; padding: 160px var(--pad); display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
 .fc__text { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }

@@ -1,6 +1,7 @@
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isPhone = () => matchMedia('(max-width: 860px)').matches;
+  const touch = matchMedia('(pointer: coarse)').matches; // celular/tablet: timeline y fotos de Argentina se deslizan de costado
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -399,7 +400,7 @@
   // horizontal timeline
   const track = $('.tl__track');
   const dist = () => Math.max(0, track.scrollWidth - innerWidth);
-  gsap.to(track, {
+  if (!touch) gsap.to(track, {
     x: () => -dist(), ease: 'none',
     scrollTrigger: { trigger: '.tl', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true, anticipatePin: 1 },
   });
@@ -455,18 +456,23 @@
   gsap.from('.arg__date', { scale: 0.7, opacity: 0, ease: 'none', scrollTrigger: { trigger: '.arg__date', start: 'top bottom', end: 'center 55%', scrub: true, onLeave: () => $('.arg__date').classList.add('is-filled'), onEnterBack: () => $('.arg__date').classList.remove('is-filled') } });
 
   const pics = $$('.arg__stack img'), caps = $$('.arg__caps p'), argN = $('.arg__n span');
+  const setArg = idx => {
+    argN.textContent = String(idx + 1).padStart(2, '0');
+    let on = 0; caps.forEach((c, k) => { if (idx >= +c.dataset.from) on = k; });
+    caps.forEach((c, k) => c.classList.toggle('on', k === on));
+  };
+  const stack = $('.arg__stack');
+  if (touch) stack.addEventListener('scroll', () => { // la foto más cerca del centro manda el epígrafe y el contador
+    const mid = stack.scrollLeft + stack.clientWidth / 2;
+    setArg(pics.reduce((best, p, k) => (Math.abs(p.offsetLeft + p.offsetWidth / 2 - mid) < Math.abs(pics[best].offsetLeft + pics[best].offsetWidth / 2 - mid) ? k : best), 0));
+  }, { passive: true });
   const stackTl = gsap.timeline({
-    scrollTrigger: {
+    scrollTrigger: touch ? undefined : {
       trigger: '.arg__pin', start: 'top top', end: () => '+=' + pics.length * 55 + '%', pin: true, scrub: 0.8, invalidateOnRefresh: true,
-      onUpdate: st => {
-        const idx = Math.min(pics.length - 1, Math.floor(st.progress * pics.length));
-        argN.textContent = String(idx + 1).padStart(2, '0');
-        let on = 0; caps.forEach((c, k) => { if (idx >= +c.dataset.from) on = k; });
-        caps.forEach((c, k) => c.classList.toggle('on', k === on));
-      },
+      onUpdate: st => setArg(Math.min(pics.length - 1, Math.floor(st.progress * pics.length))),
     },
   });
-  pics.forEach((p, i) => {
+  if (!touch) pics.forEach((p, i) => {
     if (i === 0) return;
     const rot = (i % 2 ? 1 : -1) * (2 + (i % 3));
     // fromTo, not from: invalidateOnRefresh would re-read the offset y as the end value
