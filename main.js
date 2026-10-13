@@ -35,7 +35,7 @@
         <p class="eyebrow">${i ? 'Estreno anterior' : 'El más nuevo'} · ${dmy(r.date)}</p>
         <h2 class="new__title${long ? ' new__title--long' : ''}">${long ? esc(r.t) : r.t.split(' ').map(esc).join(' <br>')}</h2>
         <ul class="new__facts mono">${(r.facts || []).map(([l, t]) => `<li><b>${esc(l)}</b> ${esc(t)}</li>`).join('')}</ul>
-        <div class="hero__cta"><button class="btn btn--light" data-yt="${esc(r.id)}">Ver el video</button>${r.listen ? `<a class="btn btn--ghost" href="${esc(r.listen)}" target="_blank" rel="noopener">Escuchar</a>` : ''}</div>
+        <div class="hero__cta"><button class="btn btn--light" data-yt="${esc(r.id)}">Ver el video</button><button class="btn btn--ghost" data-listen="${i}">Escuchar</button></div>
       </div>
       <button class="new__media" data-yt="${esc(r.id)}" aria-label="Ver el video de ${esc(r.t)}"><img src="${esc(r.cover)}" alt="${esc(r.coverAlt || 'Portada de ' + r.t)}"${i ? ' loading="lazy"' : ''}><span class="new__play" aria-hidden="true">▶</span></button>
       ${(r.reel || []).length ? `<div class="new__reel" aria-label="Imágenes de ${esc(r.t)}">${r.reel.map(reelItem).join('')}</div>` : ''}
@@ -138,6 +138,22 @@
     `<button class="tt" data-tt="${id}" aria-label="Ver TikTok: ${t}"><img src="assets/social/tt_${id}.jpg" alt="" loading="lazy"><span>${t}</span></button>`
   ).join('');
 
+  /* ---------- "Escuchar": elegir plataforma ---------- */
+  // r.all = smartlink oficial del sello (todas las plataformas); r.listen = álbum en Deezer. Spotify, Apple y YouTube Music abren la búsqueda del tema:
+  // nunca queda un link roto ni hay que cargar uno por plataforma.
+  const listenHtml = r => {
+    const q = encodeURIComponent('Dei V ' + r.t);
+    const links = [
+      ['Spotify', `https://open.spotify.com/search/${q}`],
+      ['Apple Music', `https://music.apple.com/search?term=${q}`],
+      ['Deezer', /deezer\.com/.test(r.listen || '') ? r.listen : `https://www.deezer.com/search/${q}`],
+      ['YouTube Music', `https://music.youtube.com/search?q=${q}`],
+      ['YouTube', `https://www.youtube.com/watch?v=${r.id}`],
+      ...(r.all ? [['Más plataformas', r.all]] : []),
+    ];
+    return `<div class="listen"><p class="eyebrow">Escuchar</p><h3>${esc(r.t)}</h3>${links.map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener"><span>${n}</span><b aria-hidden="true">↗</b></a>`).join('')}</div>`;
+  };
+
   /* ---------- dialog: lightbox + youtube ---------- */
   const box = $('.box'), boxBody = $('.box__body');
   const openBox = html => { boxBody.innerHTML = html; box.showModal(); lenis && lenis.stop(); };
@@ -148,6 +164,8 @@
   document.addEventListener('click', e => {
     const g = e.target.closest('[data-ig]');
     if (g && igCode(g.dataset.ig) && !(typeof moved !== 'undefined' && moved > 6)) return openBox(`<iframe class="box__ig" src="https://www.instagram.com/p/${g.dataset.ig}/embed/" title="Publicación de Instagram" scrolling="no"></iframe>`); // moved: no abrir si fue un arrastre del reel
+    const l = e.target.closest('[data-listen]');
+    if (l) return openBox(listenHtml(RELEASES[+l.dataset.listen]));
     const t = e.target.closest('[data-tt]');
     if (t) return openBox(`<iframe class="box__tt" src="https://www.tiktok.com/player/v1/${t.dataset.tt}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Video de TikTok"></iframe>`);
     const b = e.target.closest('[data-yt]');
