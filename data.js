@@ -35,21 +35,21 @@ window.DATA = {
   {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. Cinco temas, con Ozuna y Wisin x Baby Ranks. “Kisses”, el tercero, ya salió.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":79821},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":449843},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":768408},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115035059},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177788323},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51495058},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62071903},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59466709},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58085863},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50721993},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45268618},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30164800},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4957922},
-  {"id":"vekhcnBKgXA","t":"Underwater","m":"visualizer · 2025","views":1569636},
-  {"id":"P9a6Za0tDgI","t":"Llegará","m":"Underwater Version · 2020","views":2703591}
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":104189},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":509987},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":873730},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115070042},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177816305},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51501108},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62087662},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59480770},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58091917},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50732046},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45273620},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30176188},
+  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4959510},
+  {"id":"vekhcnBKgXA","t":"Underwater","m":"visualizer · 2025","views":1570372},
+  {"id":"P9a6Za0tDgI","t":"Llegará","m":"Underwater Version · 2020","views":2704261}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -324,5 +324,5 @@ window.DATA = {
   "los40queconciertoshayenelmesdenoviembredeteddyswimsaruslanapasandopordeiv",
   "creativeloafingtampaemergingpuertoricanreggaetonrapperdeivplaystampathisweekend"
  ],
- "updated": "2026-10-13"
+ "updated": "2026-10-14"
 };
