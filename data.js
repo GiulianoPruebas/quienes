@@ -35,21 +35,22 @@ window.DATA = {
   {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. Cinco temas, con Ozuna y Wisin x Baby Ranks. “Kisses”, el tercero, ya salió.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":104189},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":509987},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":873730},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115070042},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177816305},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51501108},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62087662},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59480770},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58091917},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50732046},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45273620},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30176188},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4959510},
-  {"id":"vekhcnBKgXA","t":"Underwater","m":"visualizer · 2025","views":1570372},
-  {"id":"P9a6Za0tDgI","t":"Llegará","m":"Underwater Version · 2020","views":2704261}
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":50121},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":102804},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":15367},
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":157624},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":962860},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":1332859},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115192893},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177923427},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51522644},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62144671},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59534366},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58113455},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50769162},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45291444},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30219010},
+  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4965769}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -68,6 +69,8 @@ window.DATA = {
  "press": [
   ["2026-10","El Calce","Dei V comienza a mostrar sus sabores con “Cuchi Cuchi”","https://www.elcalce.com/musica/2026/10/08/dei-v-comienza-a-mostrar-sus-sabores-con-cuchi-cuchi/","lanzamiento"],
   ["2026-10","Tu Música Hoy","Dei V enloquece a sus fans en una escucha exclusiva de su próximo disco en Argentina","https://tumusicahoy.com/en/dei-v-enloquece-a-sus-fans-en-una-escucha-exclusiva-de-su-proximo-disco-en-argentina/","show"],
+  ["2026-10","LOS40","Dei V reúne a Rauw Alejandro, Ozuna y Myke Towers en ‘FLAVORZ PACK’, su nuevo álbum","https://news.google.com/rss/articles/CBMirgFBVV95cUxPNTFHcnNQenBTV1FzYkZucURNOGRPTWhNRGh0WkxmUE1XYjZpdDluOHU0aWZQc2dYdGc0UlBnbUU3V2FnTGptNWpPY2lLbnRUWFBRYmoxSi1ZeTdLRm1CZEdyYkRxakxnaVdfZE82RmtDZ0luVEdwY3EtNi13SE9MU0hKc3ozS3FiQVpYRlBIaEpURFBSektZZHpBMXI2LU5wOG4tLUpJN1RWWllmWkHSAcIBQVVfeXFMT1c0Z1lPWGI0cUpMMElsWTk1QVR0c2NTWF9aZ19ZckQ0OU53VkNwQXdBN3Y4dmh0aFVHVzA1QVBabl90V2NxektYMFNLOEhxeTQ5b3pSN29FYXpVaW1hVXBHWVZhUmZST0Z4cHFvMVd5X0x0SEIyS3NtbXp1SXNSclAyQjcyc29USm9TRGpoRTBfelZFckR6SW5wanF0czk5YnpEWXA0Vmh5V2ozcVNiOHdCb04temw2MGZHeTBJcV9GdEE?oc=5","lanzamiento"],
+  ["2026-10","www.abc.com.py","El artista urbano Dei V presenta 'Flavorz Pack', álbum con \"distintos sabores musicales\"","https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb0hRbEFWSEgzNzRGUTNUZ1hlOVU1d0JUZmJzd2pVenVKZURGZHRKX295WUhzZm9temQtekpEaGRUS3RuU3hRM3BNeE5JaVAxMW9YZmozVUhxbVlfUUtvdXpoWklyX19ZRThVRndnSU5ZSXhWNzNvZzRPZEppZFhFWW53T2VMWXp3QzZTY0x4M2cybkxtZVN4YXFLWFBleG4wTjJRazNMNUpIR2JOb1k4MU93MEZXREZseFl2d1RHTUFyMm9UdkRUOXpYdXo1MnRxb29RdS1oSFl1d3VuSFl4OHl6Zw?oc=5","lanzamiento"],
   ["2026-09","Billboard","Karol G lidera las nominaciones a los HEAT Latin Music Awards 2026 (Dei V, tres veces)","https://www.billboard.com/music/latin/heat-latin-music-awards-2026-nominations-list-karol-g-1236345769/","hito"],
   ["2026-09","Emisoras Musicales","YOVNGCHIMI, DJ Khaled y Dei V ya suenan en Muy Buena con HVRACAN: el trap que viene a arrasar Europa","https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFZJcHZLYV90dEZoREI4ZWYxcUhEVUpHZ3hRbktVRDFHM3R1NkJrNF9lQV9hODJGbURCeFZSWUtGaGM2OVhOWjF4NURuUmtTU3V4U3NYcHlQeEdlV2h5TFFJMjN6TWNwYWh6SEJPN19yQjlkdTg1aGVxbDNVcVNZWVdSd3VfWFJ1aUx6ekxGVkUtUWtFUEU0Rmt30gGfAUFVX3lxTFBNR2tsZ1QxSS1BN19iS2pQd2VQNE5mT2RCQVFDRmVPZ0gxdjNPM09KS1NjcVlOSF9kdDRBelFSM3Zsd0lxQkstLXZTdE9Id2tuQVN6Q1VJYmwwZUhCLWxwM0NoVnRtTHVCRnNEQmxWSlpRc0pqbzBqWU5sRm12QlduZER6RW1UdTl1UEcyZDVfY1dzYjBOZ0wzYmpNRmRKaw?oc=5","noticia"],
   ["2026-08","EuropaFM","Rauw Alejandro, RaiNao, Dei V, Jowell y Randy y Víctor Manuelle: los vídeos de los artistas invitados del último concierto de Bad Bunny","https://news.google.com/rss/articles/CBMilAJBVV95cUxPdkt4SkJFQlh2R1BPUU50OHJxSklRRUc4Z2lCaHRXbE5aOHZYX0V5Uk1RY3M3anVQa2dITlZKSWRYQ1NXdWlSVi1rVUlTeklMcG1uZVhXNjliS1VtMGdNbmNlNmRIdzBpS3hGZUdMYzVsamNXQ0pOeHJjQkhpR2hFbnN3ek1Bd2dDUnQ1OVZKbTNwdUE1VTdQRUxRS3N6UTRQQ0dmTndfa05iOU10MXhWQUZaczBXZHJINTJuVUExa1JrelRIUnROek50eVhvUmpHZ19XR1pxd29qc1FidTdtdE9iQWMxMjdVWC1KTXFsbEEzVllURHJHY2RfTU96SjVzY0daU2RhNXZRY2JDTi00QWhPQ1LSAZQCQVVfeXFMTm1iWmJrVllBY2pFS3RfcnNrRGJoQTczcVhYVlhlbDNvS3A2OXJyNzY3NDhTUS1ndGJVem9CQ3JRQzJNazM5c0IwS0NMTmFxek5RcE9MN0dUSmhuZlRJdWp1b3doS2N4UHNIUWlJcjJxMnRxNzZIaV9JNlVPT1EtYXdyV0QyTWFTOWxyWTlodklTS2duclMwbDJEZGdDbnVtVkFLLWxEWFBtMU5TTUZzTXBzUGtTTDR5ODB4N1VSUVBrQkJQcm12S3I3aDFhRi1WNUNkWFFzczhmXzhRY1drWW5yY2ozd3Z1eVpUY29Rbmo5UW1WMFMyZzNBYWtFbjRnLTBOWElQYmV4VEdCVC1FTXlSZ3py?oc=5","show"],
@@ -213,9 +216,9 @@ window.DATA = {
   {"v":51,"suffix":"M","l":"vistas del freestyle “¿Quién es Dei V?”, el que lo hizo explotar","yt":"h8f64lb_kn8"}
  ],
  "releases": [
-  {"id":"YKeTo7LXuNo","t":"Kisses","date":"2026-10-13","accent":"#ff3b3b","facts":[["EP","Tema 3 de CHOCOLATE, el EP de México"]],"listen":"https://www.deezer.com/album/1115473402","all":"https://rimasmusic.io/kisses","cover":"https://i.ytimg.com/vi/YKeTo7LXuNo/maxresdefault.jpg","coverAlt":"Portada de Kisses","reel":[{"i":"assets/ig/Deaen7VRpqe.jpg","a":"Publicación de @deivpr sobre Kisses","ig":"DeafJNdET1S"},{"i":"assets/ig/DeaeoFtRGOl.jpg","a":"Publicación de @deivpr sobre Kisses","ig":"DeafJNdET1S"},{"i":"assets/ig/DeaeoeWRBl7.jpg","a":"Publicación de @deivpr sobre Kisses","ig":"DeafJNdET1S"},{"i":"assets/ig/DeaeoimxdHD.jpg","a":"Publicación de @deivpr sobre Kisses","ig":"DeafJNdET1S"},{"i":"assets/ig/DeaeoiIkcDD.jpg","a":"Publicación de @deivpr sobre Kisses","ig":"DeafJNdET1S","play":true},{"i":"https://cdn-images.dzcdn.net/images/cover/55e92a0e21530006ef6973f20df09239/1000x1000-000000-80-0-0.jpg","a":"Portada oficial de Kisses"}]},
-  {"id":"0pzNfupqgzg","t":"èmó","date":"2026-10-10","accent":"#ff8ad8","facts":[["10.10.2026","Estreno del video oficial"],["2:23","Duración del video"],["EP","Tema 1 de PALETA, el EP de España"]],"cover":"https://i.ytimg.com/vi/0pzNfupqgzg/maxresdefault.jpg","coverAlt":"Portada de èmó: Dei V agachado junto a una llanta dorada","reel":[{"i":"assets/ig/DeW_aD_RfI5.jpg","a":"Publicación de @deivpr sobre èmó","ig":"DeW_aD_RfI5","play":true},{"i":"assets/img/eps/paleta.jpg","a":"Portada oficial de èmó, con el tracklist de PALETA: 1 èmó, 2 Rompe Cabeza con XAED, 3 Tabacco, 4 Una de una con Myke Towers y Nicky Jam, 5 Bombon con Galeno, 6 Lonely"}],"listen":"https://www.deezer.com/album/1115463832","all":"https://rimas.ffm.to/emo"},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","date":"2026-10-08","accent":"#ff3b3b","facts":[["08.10.2026","Salió la misma noche que Dei V pisó Argentina por primera vez"],["Producción","Gaby Music · PUKA"],["2:37","Vuelta al trap, el género que lo hizo conocido"],["EP","Tema 2 de LICORISH, el que escuchó toda Argentina"]],"listen":"https://www.deezer.com/album/1115326682","all":"https://rimasmusic.io/cuchicuchi","cover":"assets/cuchi/cover1.jpg","coverAlt":"Portada oficial de Cuchi Cuchi: Dei V con campera roja sobre fondo azul","reel":[{"i":"assets/ig/DeSkVNVRqie.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeSkVNVRqie","play":true},{"i":"assets/ig/DeQQ0BDx2Hj.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0"},{"i":"assets/ig/DeQQ0BUxXuP.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0"},{"i":"assets/ig/DeQQ0MwEXyz.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0","play":true},{"i":"assets/ig/DeQQ0IYRQRQ.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0"},{"i":"assets/ig/DeQQ0KDxngP.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0"},{"i":"assets/ig/DeQQ0Mgxl4_.jpg","a":"Publicación de @deivpr sobre Cuchi Cuchi","ig":"DeQSVQZkSG0"},{"v":"assets/cuchi/clip1.mp4","p":"assets/cuchi/clip1.jpg"},{"i":"assets/cuchi/cover3.jpg","a":"Dei V apoyado en los lockers junto a una chica"},{"v":"assets/cuchi/clip2.mp4","p":"assets/cuchi/clip2.jpg"},{"v":"assets/cuchi/clip3.mp4","p":"assets/cuchi/clip3.jpg"},{"i":"assets/cuchi/cover4.jpg","a":"Dei V sentado sobre un pupitre en el aula"},{"v":"assets/cuchi/clip4.mp4","p":"assets/cuchi/clip4.jpg"},{"i":"assets/cuchi/cover2.jpg","a":"Portada alternativa de Cuchi Cuchi"},{"i":"assets/img/eps/licorish.jpg","a":"Tracklist de LICORISH: 1 Candy Man, 2 Cuchi Cuchi, 3 Underwa, 4 Halloween con Juanka y Kendo, 5 Juansoto"}]}
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/KKc8jsO0nIM/maxresdefault.jpg","coverAlt":"Portada de Dei V, Rauw Alejandro - All Night | Flavorz Pack","reel":[]},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/gIojKaxybhE/maxresdefault.jpg","coverAlt":"Portada de Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","reel":[]},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/b6QUECYluOg/maxresdefault.jpg","coverAlt":"Portada de Tabacco | Flavorz Pack","reel":[]}
  ],
  "seen": [
   "infobaedeivlaestrelladeunanuevageneraciondelamusicaurbanaapadrinadaporbadbunnyelconejoesunejemploaseguirparatodos",
@@ -322,7 +325,9 @@ window.DATA = {
   "ticketmasterespanadeivanuncianuevosconciertosenmadridybarcelonatrassoldoutenlarivierayellanzamientodequickie",
   "los40deivlanzagiraporespanaconconciertosenmadridybarcelonaen2025asipuedesconseguirtusentradas",
   "los40queconciertoshayenelmesdenoviembredeteddyswimsaruslanapasandopordeiv",
-  "creativeloafingtampaemergingpuertoricanreggaetonrapperdeivplaystampathisweekend"
+  "creativeloafingtampaemergingpuertoricanreggaetonrapperdeivplaystampathisweekend",
+  "los40deivreunearauwalejandroozunaymyketowersenflavorzpacksunuevoalbum",
+  "wwwabccompyelartistaurbanodeivpresentaflavorzpackalbumcondistintossaboresmusicales"
  ],
- "updated": "2026-10-14"
+ "updated": "2026-10-15"
 };
