@@ -35,22 +35,22 @@ window.DATA = {
   {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. Cinco temas, con Ozuna y Wisin x Baby Ranks. “Kisses”, el tercero, ya salió.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":50121},
-  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":102804},
-  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":15367},
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":157624},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":962860},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":1332859},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115192893},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":177923427},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51522644},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62144671},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59534366},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58113455},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50769162},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45291444},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30219010},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4965769}
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":422998},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":562673},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":83996},
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":240087},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":2246941},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":1466395},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115561363},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":178241666},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51582335},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62322268},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59679915},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58177566},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50879141},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45344826},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30350116},
+  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4984457}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -71,6 +71,13 @@ window.DATA = {
   ["2026-10","Tu Música Hoy","Dei V enloquece a sus fans en una escucha exclusiva de su próximo disco en Argentina","https://tumusicahoy.com/en/dei-v-enloquece-a-sus-fans-en-una-escucha-exclusiva-de-su-proximo-disco-en-argentina/","show"],
   ["2026-10","LOS40","Dei V reúne a Rauw Alejandro, Ozuna y Myke Towers en ‘FLAVORZ PACK’, su nuevo álbum","https://news.google.com/rss/articles/CBMirgFBVV95cUxPNTFHcnNQenBTV1FzYkZucURNOGRPTWhNRGh0WkxmUE1XYjZpdDluOHU0aWZQc2dYdGc0UlBnbUU3V2FnTGptNWpPY2lLbnRUWFBRYmoxSi1ZeTdLRm1CZEdyYkRxakxnaVdfZE82RmtDZ0luVEdwY3EtNi13SE9MU0hKc3ozS3FiQVpYRlBIaEpURFBSektZZHpBMXI2LU5wOG4tLUpJN1RWWllmWkHSAcIBQVVfeXFMT1c0Z1lPWGI0cUpMMElsWTk1QVR0c2NTWF9aZ19ZckQ0OU53VkNwQXdBN3Y4dmh0aFVHVzA1QVBabl90V2NxektYMFNLOEhxeTQ5b3pSN29FYXpVaW1hVXBHWVZhUmZST0Z4cHFvMVd5X0x0SEIyS3NtbXp1SXNSclAyQjcyc29USm9TRGpoRTBfelZFckR6SW5wanF0czk5YnpEWXA0Vmh5V2ozcVNiOHdCb04temw2MGZHeTBJcV9GdEE?oc=5","lanzamiento"],
   ["2026-10","www.abc.com.py","El artista urbano Dei V presenta 'Flavorz Pack', álbum con \"distintos sabores musicales\"","https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb0hRbEFWSEgzNzRGUTNUZ1hlOVU1d0JUZmJzd2pVenVKZURGZHRKX295WUhzZm9temQtekpEaGRUS3RuU3hRM3BNeE5JaVAxMW9YZmozVUhxbVlfUUtvdXpoWklyX19ZRThVRndnSU5ZSXhWNzNvZzRPZEppZFhFWW53T2VMWXp3QzZTY0x4M2cybkxtZVN4YXFLWFBleG4wTjJRazNMNUpIR2JOb1k4MU93MEZXREZseFl2d1RHTUFyMm9UdkRUOXpYdXo1MnRxb29RdS1oSFl1d3VuSFl4OHl6Zw?oc=5","lanzamiento"],
+  ["2026-10","El Generacional","Dei V estrena su nuevo álbum ‘FLAVORZ PACK’","https://news.google.com/rss/articles/CBMipAFBVV95cUxNTnl2NEZRM3NpTGlVMnB6SWxodGhzWUFBbTc5V3lpaUpjaHc2bndUWDdjVExqSmNPUmMxelBsOFRTMVVLdnQtSzAzTVQ5RFZYampJTUp2LXVJdW5FRmd2RXFzckZNMUtmUnU2VDA3SjM3X25BQWJ5ZmhqcDV2d0ZiMjZyeHJ3SEVwNVJZeVRaTWtNVDBBX1ZIWDVuMnJBTjRhdWdzeg?oc=5","lanzamiento"],
+  ["2026-10","Clarin.com","Pedro Capó, Dei V, Cepeda, Maluma, Pablo Alborán y Chuwi, entre los estrenos latinos","https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWGhYRDdQckFESVZIQ2VpRkRyVDBhT3Fja19pM0dmZzVCZ0hYYlBwUDVxNXoyT1lHb0pkZUE4NnRyUVlyejdhWGs0dE1Rd1IzTUM5YWxvbWZYYXlOOWkzY3doZkU3aVZ0ZHhpOThiRGN6cWY0TGx1MXJNdW80VGZYcmNPS0tnc3Q4dG9jdDdiUlQ5d3hPNzZMaXBpbm0weFpIaGF0TGoxWGNMZW1KckJsdUIwd0FIaWh1dWVTRjctdnBwMW9tcy1JLXREMHU1TU91?oc=5","noticia"],
+  ["2026-10","LOS40","Letra y video de 'All Night', la nueva canción de Rauw Alejandro y Dei V: una unión con estilo clásico","https://news.google.com/rss/articles/CBMiywFBVV95cUxPQVZYUWJYT0JLR19zNnFfMDY2UllqZWtoQ0gtSEJBUGRzV2pjRmR5d0dhT1F5MUE2eXlUQ2pnOV9VZ0xHX1RCMnMyNHFYNDZxdE93di1DRjA0Z3NhTkZETWxUWE4wRE9BMVA5Nnd2TFVHbF9HUkRPZXA5VzJKaEltbnBSQWU0WFBqX1R0ejdwWDcyMzhsYnhDdk43UmVrdHVWRkhvcjFlNDAyRXI3a3pFRGdCSnhQa2YzV3lSVzRHSDRtUk9TaFk0bGo0RdIB3wFBVV95cUxNVFM5YXdqcVljMEo0SzhEZnVlZmNZbXZTVWczc0gyWmpYN0dLenhhR2RCMFR3R1VzWFo1RzZlM0xmSmhfU0J0WW9nckJPeHMzelQ2ckZmcGYwZ1NXdXJkVGlIcnQyM1A4NUpzU2doUFJyTGNmc09pZWxXbEtGMXppd0QxVHlGZFRDeTJ4UVpUUGlJVVVDZlpnOEhuNWtWLThYekRsMTJXSDBzaHd5Uzd4U01kaUUyQzJDd2xwVHpoRnlYNzZvdkZsM0NRWkhGNHNnTnEzcXE5QXpyVmJtQ3JB?oc=5","lanzamiento"],
+  ["2026-10","LOS40","Dei V reparte sabores, Kidd Voodoo estrena era y Grecas desafía al algoritmo | Fresh Urban, Ep. 7","https://news.google.com/rss/articles/CBMivwFBVV95cUxOXzRUQUNnemRQb0JkU0lmMUI1MzZQVFJJSXpheUpKaUxsTzhTUnpFaUItRWoyUjl1Z1diMk5WUHJrQTBhbFp1ZVNBY1Rkb2pISl9uSzk5Z1FiMjhnY19MVmlHdjNNVnA1VXdzZEFtbUNpRHFzeGMtajlBem1CZFpUWmZFa0Y0WGZlOHUzWjhwbFpIMkFFVEdIeWoxbTZZSGczWWpkV3J0TURRdWtjZHFiVmlyVEZpazVTeW5Dam9SONIB0wFBVV95cUxOcnZIWThiQ2lrUXhYYWRpSDk3SzhpSW9iZVZocUwwb1Z2MlVqM1VlMVVId0VVS0RqSFpOWXYxXzF3bmgwMEhuSmRGd1otY0lGLUVJdHNkY0lMaFAwX1lNeUNnUGgxMjdmRE8zdWo3V1lFQWt6Z0RmMDFrVWIxSUp1UV9ESGthd3dXckZsczIzc1g0SVc2RG9XNzVlMW5oZlozeS1WczV1RWljQUR6VkRpek5IZWQ2Y2VUem44eXdESmMzWGhyVmFTYjJvVnJ4cGdmUDJz?oc=5","lanzamiento"],
+  ["2026-10","Remezcla","10 New Songs to Listen to by Chuwi, Los Menor3s, Dei V & More","https://news.google.com/rss/articles/CBMilgFBVV95cUxNTWo5aXpEaTN6bkhldmlfU2FvYnZEbmFfaE54bFU5cVhJN2VMdWJRY0NjVEVwellXZzFIUlFKYmxULWo0czZOY3ZTa2dDZzNHS2NMWGtGRXZrZm5aMmZ6UUhrdE1QN0NJdlFJRHVDR25FTVpSbzd6dGtCZDJkLU9ZQU0zX0QyQzhWR3hQN3JCZGNFT01ONmc?oc=5","noticia"],
+  ["2026-10","latination.com","Dei V serves up FLAVORZ PACK with Rauw Alejandro, Ozuna and a star-studded lineup","https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfdUprRzlRZDZFUnJjLWpCOGNsREJVcmVEaENyMGhpNmxTRDFUWUZ2ZHJ2UkhJc0dTZmk1WnJQaUMyN08zYWp1SUhoM3BrSkxqRXZ4STlPeEtCTTZTcllxMQ?oc=5","noticia"],
+  ["2026-10","El Dia.com.do","Dei V presenta \"Flavorz Pack\", álbum con \"distintos sabores musicales\"","https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVVBYmNPYzdZeHFjdHVHbGJFTG5hdkFvQkhlcUdTR1FWSWZwMzdDWE9GTFA5M2l4MnN3SWJYZ2llbm9MaWQzQk93XzNMYmVnejROT201N2JBTDVvQkYxc2lveGtxZ1hUejBzdmliOEo1MFBHbzdoQk1XNEw5M1ZwdzF1RzV6Q1Nza1A0Tm10Zy0?oc=5","lanzamiento"],
   ["2026-09","Billboard","Karol G lidera las nominaciones a los HEAT Latin Music Awards 2026 (Dei V, tres veces)","https://www.billboard.com/music/latin/heat-latin-music-awards-2026-nominations-list-karol-g-1236345769/","hito"],
   ["2026-09","Emisoras Musicales","YOVNGCHIMI, DJ Khaled y Dei V ya suenan en Muy Buena con HVRACAN: el trap que viene a arrasar Europa","https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFZJcHZLYV90dEZoREI4ZWYxcUhEVUpHZ3hRbktVRDFHM3R1NkJrNF9lQV9hODJGbURCeFZSWUtGaGM2OVhOWjF4NURuUmtTU3V4U3NYcHlQeEdlV2h5TFFJMjN6TWNwYWh6SEJPN19yQjlkdTg1aGVxbDNVcVNZWVdSd3VfWFJ1aUx6ekxGVkUtUWtFUEU0Rmt30gGfAUFVX3lxTFBNR2tsZ1QxSS1BN19iS2pQd2VQNE5mT2RCQVFDRmVPZ0gxdjNPM09KS1NjcVlOSF9kdDRBelFSM3Zsd0lxQkstLXZTdE9Id2tuQVN6Q1VJYmwwZUhCLWxwM0NoVnRtTHVCRnNEQmxWSlpRc0pqbzBqWU5sRm12QlduZER6RW1UdTl1UEcyZDVfY1dzYjBOZ0wzYmpNRmRKaw?oc=5","noticia"],
   ["2026-08","EuropaFM","Rauw Alejandro, RaiNao, Dei V, Jowell y Randy y Víctor Manuelle: los vídeos de los artistas invitados del último concierto de Bad Bunny","https://news.google.com/rss/articles/CBMilAJBVV95cUxPdkt4SkJFQlh2R1BPUU50OHJxSklRRUc4Z2lCaHRXbE5aOHZYX0V5Uk1RY3M3anVQa2dITlZKSWRYQ1NXdWlSVi1rVUlTeklMcG1uZVhXNjliS1VtMGdNbmNlNmRIdzBpS3hGZUdMYzVsamNXQ0pOeHJjQkhpR2hFbnN3ek1Bd2dDUnQ1OVZKbTNwdUE1VTdQRUxRS3N6UTRQQ0dmTndfa05iOU10MXhWQUZaczBXZHJINTJuVUExa1JrelRIUnROek50eVhvUmpHZ19XR1pxd29qc1FidTdtdE9iQWMxMjdVWC1KTXFsbEEzVllURHJHY2RfTU96SjVzY0daU2RhNXZRY2JDTi00QWhPQ1LSAZQCQVVfeXFMTm1iWmJrVllBY2pFS3RfcnNrRGJoQTczcVhYVlhlbDNvS3A2OXJyNzY3NDhTUS1ndGJVem9CQ3JRQzJNazM5c0IwS0NMTmFxek5RcE9MN0dUSmhuZlRJdWp1b3doS2N4UHNIUWlJcjJxMnRxNzZIaV9JNlVPT1EtYXdyV0QyTWFTOWxyWTlodklTS2duclMwbDJEZGdDbnVtVkFLLWxEWFBtMU5TTUZzTXBzUGtTTDR5ODB4N1VSUVBrQkJQcm12S3I3aDFhRi1WNUNkWFFzczhmXzhRY1drWW5yY2ozd3Z1eVpUY29Rbmo5UW1WMFMyZzNBYWtFbjRnLTBOWElQYmV4VEdCVC1FTXlSZ3py?oc=5","show"],
@@ -128,6 +135,7 @@ window.DATA = {
   ["2025-08","Primera Hora","Dei V y Omar Courtz prenden el “Choliseo” en el show de Bad Bunny","https://news.google.com/rss/articles/CBMivgFBVV95cUxPRk56a3pSVmxhZC1fRjByX0ZwVHgzNEtUWFBHUl9LRFdQUmhDM2x4YnJ0SnJjbnFORzM1cmJhRTJDbFBCZGR1clR2NjlJczlhcXAtSXZHdWJWUWFKUXJXd3RENWJUbmFPMHFWYzJKOTZBWmxrVE9RRW5kaWE4LUE3LXYzRnNtSDJzbEFMVXpwZFhrSlNZV0xBUzFXMzZ0czBlMnBsWExtTm5ZYkJ3d1VRM25PSExNTlMxTThpeUxB?oc=5","show"],
   ["2025-08","El Vocero de Puerto Rico","Dei V y Omar Courtz se unen a Bad Bunny en su residencia en el Choliseo","https://news.google.com/rss/articles/CBMi4gFBVV95cUxPRWtSa3NYY1ZZMFBRZDNHUWNqNWRVYTZENVloQ1RpSTkwdjVsMDJZUkJocTE2ZVZyS3ZmazI4cDkzeGQyeVVBU1lCQk5nMURKMUE5Q084elViWlpITUE4OU9NOURzb0FMVGdEZWxvdENaSTlvSTBiMG8tVFBkYTk2OElQS3ZEdVAzZjJCVWtRQlRJX1BONktrZ2xYNjlqR2hBSzJmTUlHMFlQMkk1QUFtMl9fTjljN1k5R0c0SXdhcGlBOXFfcnlwQmtTeHptbDdxOVN1M1ZYU013emlvdGgyaXhn0gHnAUFVX3lxTE5lSXZyVXZSVE5RR0x1V0tMdlFHSDlFUDh4R2I2YXNOZDhKMUFIVUN6STBZWXhjNEZhb0JBRlVGSTVwWGdXSFdQZlQxeTY1ZE1LT2g2SGViTVo0VTBaZlN6WnRyMmRzaTlHNUw3TG1QcGRNZlhuVlRidTBrVXVFMWFXUjVfX2JvR0xvWm9CdEJSV0VhUW51MGw2MXZyU1gzNWR3ak05UlJwTV9makVXQVplRVlaR2Z6d2tUc1o5ektGQ2szOWtBMm5TOHpGLW5MbEUxMUh2NFNlWUxXb0xDUklqN1ZOR0t0dw?oc=5","lanzamiento"],
   ["2025-08","La Ganzua","Dei V + Brytiago + Yan Block en Cambados, Pontevedra el viernes 1 de agosto de 2025","https://news.google.com/rss/articles/CBMigwFBVV95cUxNckplSGw3c3pGYnM4bTF3YlI0a1h2V1hxTjNpamRfWE1iU2p6bFRQTXN6Rmw2UDY1eDFJWG0zZWNxLUIza01QVWFRTEtHTkhVNW42bE12bXFQWHJyYWZwbVBpTG1KQXZaZk91WEduS05yZS1DYTQ5NEtxMUZhMFZIcmN6Zw?oc=5","noticia"],
+  ["2025-08","La Voz de Galicia","Gafas de sol a medianoche y pleno al 15 para Dei V, Brytiago y Yan Block en Cambados","https://news.google.com/rss/articles/CBMizgFBVV95cUxPZE42U280Ri1ybXEtOV8wUERVM0hNSFVBSmpONWdSTERzTzA4ZVlqZGx2cDVxOFRndHJ4OUdyc2k0Z3NCV0YzRV9ZYkpLVHg4cTVvVHBYckFzLWd0cm9xYlRnbDBUM25uNS1iOXk0T2wtcFo5dVBTbjB4anl2MmdpT3BXS1YtTzgzVHlhZmZVQlpGUUpqcC1KckJfZi12OGVfdXVrX2d4MUh4SmN4bFJBUWFnZ0FpMHBpM2NrN0FGaF9pdnFlbkQzV3l3S3FzZ9IB6gFBVV95cUxOSDN2TWFDTkxzNTBpRGd2QXBZMUVkZFh3MURFR0loSWd3U0V5VXNjSmVXRXBhMDVGajdtd3piSlJzOFBsMjVqY3lCVkZQTXh1NnozZU5xTFZ0a3NRTDlaV2hRTml3Uk1vWWt3U05KX1pvOGR6ZGJ2cVRzVmVvNU95emVNeXdJSDZTNG5jX1JsdE43YXNaM2JzR01kempBNGVhaldBb2FnRnJvc21hSWg3aDNLOWxPcFRHSV81TTk1Qk94QlJ2eXpPWjlQZG1EWDZQTWxWUVJHMVA1cGVOak1jQXZ2U3dnZzM1SVE?oc=5","noticia"],
   ["2025-07","La Opinión de Málaga","Dei V prende la mecha del Boombastic Málaga al ritmo de reggaeton","https://news.google.com/rss/articles/CBMitwFBVV95cUxNNF9HTDQ4d3hyQ2ROM3AxdmVxc3RkMlN0Um8wb0E5SVU4aTBGYkdTbEJ3SWtDRTRKYlJ3NDB2ZkxBN1dLLTNJa1ZUQ01nX1NvSUlUNHBEOHZmWGR4eHY1am16SzZXSnE5NHNTYWg5eEtEc0NHQUIyS0pJOVhyczFRQS1KTnc2dzVKX3pUUm9GNTJOX1U4OHp2WDVjcXRaMmtaM1BFcElyODNfQWVTWGJWRjlmdlRpRmfSAbwBQVVfeXFMT05uM015NTJfVDVwU21IZlVtdmtoaHJITUk3MG14WjAxd05JLTR0Y19sV1JMZVIzb0hFSG9xVUlKYmozQTJBS1RyWmtCaEJsbjVFSUZZTFdYU3FlWW10bTdnNWhqSnJmLUl4UTJKOW8wSk9QVTJNVERETHhkTURXbWdZRHZDQjRRTnZXb3VYcG9RUlNBU2JZT2xxM013bWtiRWVCdFZTdExWaFpQbzUycHY4VkZwZnQxWExPWDk?oc=5","noticia"],
   ["2025-07","LOS40","Mbappé y Lamine Yamal, \"presentes\" en lo nuevo de Dei V: 'Tumbao'","https://news.google.com/rss/articles/CBMikwFBVV95cUxPTjhuSWJKVkZuZEVpSmx5QVVfcnFwS1lNUTFJTEIza2JMY2FCcU1XR1VmbzJtSmpGNHJYMm1XUnl2Wm1kRjI0Y3pkZlZXTzdaOGhRYjg5RTdVTjdhOVpOby16dDljVXRpaGFhY29iZXNsNzUySXBzM0VHVHJUaGlFOHJNWkxGY2Vvbzgwd0pwd2MxUFnSAacBQVVfeXFMTkJ0OUZYMmppM1BCdXU3ZUt1aU8xc1ZrQ28zTmlnSy1UUDRpbEZMa2h5WV9QSngxYmU4MDNLM3FHZ2VidmV0OG1pU0FvVFZwTU9MdS1zVXJNSjlzbGEwTnl3X1BjajROclAxTmZYdXZHb0F5ajd0TjFkUFN4Qy1QdTlUQVpwV2JzVTVqdTZ3NEUtNUM0bVhMVXdBLUdkTlZpRlpVTnA1RlE?oc=5","noticia"],
   ["2025-05","Chicago Sun-Times","Sueños Music Festival Day 1: Arcangel, Óscar Maydon, Dei V set the stage for Peso Pluma, Shakira","https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc05rMVI1aGY0UlhUb1c5OWJab2tLZmpNcmdpcWlZWWFjX21KNUpTLVpGNlRYcWVPZ19sX2hRU1E3OUNhRlIwdFU2NjN2UXhZcWdsWERDVzZwVy16Rk9YYTZxWV9qd2JraTZRX1Vxa1E0bTNHVVhhLW1zNGpuWm9nM1ZLdU1wRHZ4M09SUWtQdktRRnI1dHZmOXJDUF82QkN4eks4UWFaWDB1aVU?oc=5","show"],
@@ -208,7 +216,7 @@ window.DATA = {
   ["7330408875402808618","“Tu$$i” con YOVNGCHIMI"]
  ],
  "nums": [
-  {"v":177,"suffix":"M","l":"vistas de “Narcotics” con Bryant Myers en YouTube","yt":"oujzyZfQF94"},
+  {"v":178,"suffix":"M","l":"vistas de “Narcotics” con Bryant Myers en YouTube","yt":"oujzyZfQF94"},
   {"v":1000,"suffix":"M+","l":"streams en Spotify de “VeLDÁ” con Bad Bunny y Omar Courtz"},
   {"v":23,"prefix":"#","l":"puesto máximo en el Billboard Hot 100 con “VeLDÁ”"},
   {"v":1,"prefix":"#","l":"en España con su álbum debut ¿Quién es Dei V? y con “Badgyal”"},
@@ -327,7 +335,16 @@ window.DATA = {
   "los40queconciertoshayenelmesdenoviembredeteddyswimsaruslanapasandopordeiv",
   "creativeloafingtampaemergingpuertoricanreggaetonrapperdeivplaystampathisweekend",
   "los40deivreunearauwalejandroozunaymyketowersenflavorzpacksunuevoalbum",
-  "wwwabccompyelartistaurbanodeivpresentaflavorzpackalbumcondistintossaboresmusicales"
+  "wwwabccompyelartistaurbanodeivpresentaflavorzpackalbumcondistintossaboresmusicales",
+  "elgeneracionaldeivestrenasunuevoalbumflavorzpack",
+  "clarincompedrocapodeivcepedamalumapabloalboranychuwientrelosestrenoslatinos",
+  "los40letrayvideodeallnightlanuevacancionderauwalejandroydeivunaunionconestiloclasico",
+  "eldiacomdodeivpresentaflavorzpackalbumcondistintossaboresmusicales",
+  "los40deivrepartesaboreskiddvoodooestrenaeraygrecasdesafiaalalgoritmofreshurbanep7",
+  "lavozdegaliciagafasdesolamedianocheyplenoal15paradeivbrytiagoyyanblockencambados",
+  "24horasmxdeivestrelladeltraplatinobrillaensudebutenelpepsicenter",
+  "remezcla10newsongstolistentobychuwilosmenor3sdeivmore",
+  "latinationcomdeivservesupflavorzpackwithrauwalejandroozunaandastarstuddedlineup"
  ],
- "updated": "2026-10-15"
+ "updated": "2026-10-19"
 };
