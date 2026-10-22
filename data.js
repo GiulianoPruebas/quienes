@@ -30,9 +30,9 @@ window.DATA = {
   {"y":"2026","t":"Cuchi Cuchi","d":"Sale la misma noche del 08.10. Vuelta al trap, con video oficial.","yt":"NBCY7XWQyRE","href":"#nuevo"},
   {"y":"2026","t":"èmó","d":"10 de octubre. Video oficial; abre PALETA, el EP de España.","yt":"0pzNfupqgzg","href":"#nuevo"},
   {"y":"Nov","t":"Flow Fest CDMX","d":"29 de noviembre de 2026, Autódromo Hermanos Rodríguez. Próxima fecha confirmada.","img":"assets/img/press/l1011890.jpg"},
-  {"y":"Pronto","t":"LICORISH","d":"EP · Argentina. Lo escuchó antes que nadie, el 08.10. Incluye “Cuchi Cuchi”.","img":"assets/img/eps/licorish.jpg","ar":true,"href":"#musica"},
-  {"y":"Pronto","t":"PALETA","d":"EP · España. Seis temas; abre con “èmó”, ya en YouTube.","img":"assets/img/eps/paleta.jpg","ar":true,"href":"#musica"},
-  {"y":"Pronto","t":"CHOCOLATE","d":"EP · México. Cinco temas, con Ozuna y Wisin x Baby Ranks. “Kisses”, el tercero, ya salió.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
+  {"y":"Ya salió","t":"LICORISH","d":"Incluye “Cuchi Cuchi”.","img":"assets/img/eps/licorish.jpg","ar":true,"href":"#musica"},
+  {"y":"Ya salió","t":"PALETA","d":"Seis temas; abre con “èmó”.","img":"assets/img/eps/paleta.jpg","ar":true,"href":"#musica"},
+  {"y":"Ya salió","t":"CHOCOLATE","d":"Cinco temas, con Ozuna y Wisin x Baby Ranks.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
   {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":592776},
