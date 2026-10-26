@@ -35,22 +35,22 @@ window.DATA = {
   {"y":"Ya salió","t":"CHOCOLATE","d":"Cinco temas, con Ozuna y Wisin x Baby Ranks.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":592776},
-  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":769226},
-  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":129567},
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":399404},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":3152027},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":1662339},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115832304},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":178467782},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51624700},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62448488},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59782558},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58225114},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50957690},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45386927},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30445925},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4997644}
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":741739},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":925665},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":164704},
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":655241},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":4196495},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":2025608},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":116177874},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":178720729},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51671808},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62597515},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59895496},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58286902},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":51041389},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45435237},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30555679},
+  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":5011478}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -347,7 +347,9 @@ window.DATA = {
   "lavozdegaliciagafasdesolamedianocheyplenoal15paradeivbrytiagoyyanblockencambados",
   "remezclainterviewdeivservesupnewsidesofhissoundonflavorzpack",
   "remezcla10newsongstolistentobychuwilosmenor3sdeivmore",
-  "httpslatinationcomdeivservesupflavorzpackwithrauwalejandroozunaandastarstuddedlineup"
+  "httpslatinationcomdeivservesupflavorzpackwithrauwalejandroozunaandastarstuddedlineup",
+  "imdbdeivsharesquienesdeivalbumfeaturingmyketowerslunay",
+  "rollingstonedeivsharesquienesdeivalbumfeaturingmyketowerslunay"
  ],
- "updated": "2026-10-22"
+ "updated": "2026-10-26"
 };
