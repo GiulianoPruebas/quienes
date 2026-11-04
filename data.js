@@ -35,22 +35,22 @@ window.DATA = {
   {"y":"Ya salió","t":"CHOCOLATE","d":"Cinco temas, con Ozuna y Wisin x Baby Ranks.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":592776},
-  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":769226},
-  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":129567},
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":399404},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":3152027},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":1662339},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":115832304},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":178467782},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51624700},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62448488},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":59782558},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58225114},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":50957690},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45386927},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30445925},
-  {"id":"yYSqZ7DQD7M","t":"El Del Flavor","m":"Los Flavorz · 2025","views":4997644}
+  {"id":"Wg0O1pUVA-E","t":"Dei V, Kendo Kaponi, Juanka - Halloween","m":"nuevo","views":517510},
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":1208419},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":1197738},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":226392},
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":785792},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":5762121},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":2168724},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":116990967},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":179301668},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51772601},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62919493},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":60154752},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58429576},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":51217649},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45533038},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30800453}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -80,6 +80,7 @@ window.DATA = {
   ["2026-10","Remezcla","10 New Songs to Listen to by Chuwi, Los Menor3s, Dei V & More","https://news.google.com/rss/articles/CBMilgFBVV95cUxNTWo5aXpEaTN6bkhldmlfU2FvYnZEbmFfaE54bFU5cVhJN2VMdWJRY0NjVEVwellXZzFIUlFKYmxULWo0czZOY3ZTa2dDZzNHS2NMWGtGRXZrZm5aMmZ6UUhrdE1QN0NJdlFJRHVDR25FTVpSbzd6dGtCZDJkLU9ZQU0zX0QyQzhWR3hQN3JCZGNFT01ONmc?oc=5","noticia"],
   ["2026-10","https://latination.com/","Dei V serves up FLAVORZ PACK with Rauw Alejandro, Ozuna and a star-studded lineup","https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfdUprRzlRZDZFUnJjLWpCOGNsREJVcmVEaENyMGhpNmxTRDFUWUZ2ZHJ2UkhJc0dTZmk1WnJQaUMyN08zYWp1SUhoM3BrSkxqRXZ4STlPeEtCTTZTcllxMQ?oc=5","noticia"],
   ["2026-10","El Dia.com.do","Dei V presenta \"Flavorz Pack\", álbum con \"distintos sabores musicales\"","https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVVBYmNPYzdZeHFjdHVHbGJFTG5hdkFvQkhlcUdTR1FWSWZwMzdDWE9GTFA5M2l4MnN3SWJYZ2llbm9MaWQzQk93XzNMYmVnejROT201N2JBTDVvQkYxc2lveGtxZ1hUejBzdmliOEo1MFBHbzdoQk1XNEw5M1ZwdzF1RzV6Q1Nza1A0Tm10Zy0?oc=5","lanzamiento"],
+  ["2026-10","LOS40","Rauw Alejandro y las colaboraciones de su próximo álbum: ¿Dei V, Yovng Chimi, Kali Uchis, Myke Towers y Eladio Carrión?","https://news.google.com/rss/articles/CBMi2wFBVV95cUxQU2NqRDJuVjEydDFxOFZya3FTV0ZkY0hUZ3VlU1k1bTdKcDc4R0hzcE4tMDRiLUxRZjV0QVc3Mm16eV84dmJ3LTliQXU4eWZsNzhNaGJnOHhHMDZocDJ0LTZkdTkyWVlRb2xLaWRQWURwLUs2amJfLTBkVWRGV2ZWUllVWEZaZGxNMnlyaWZZZHBSaF91ZVJ4cnFZcjBjdEtwZExjZWQwekVQYUJSaS1zbTlxV1FVRHZIUC1RTGRmS212cjRDZVdpdmtYajFVT1A1QTJId2JwQUFFT1XSAe8BQVVfeXFMUFE1YTA4czloaFJjRkxKN0V6aWhpT2o4QkZhemlBVk1QZTdtbXFGMFlnWnJyRG1TekNZNVNlN0ZXbHpYcXhqQ2NDSF9YalN2ajdmZTlKQzUxdmpGajBjcmFRN1FLclpzTllIWUZudnRHWFJOb0o5bEpFaUItUll1VUlhRXVfM3NfODNWT3YtaEtRTjhGTU84TXNfQkhudFdzbzBSMWtXQ1NfSkVUVzFTQXNwRkJSZk42VlJVLTh6UGs0Q2UwS2k3VkxwNWpRNGYzdzczckJJX2FITVVrWlhDQ3JYdEJTQUxSRklMMUZSUFk?oc=5","lanzamiento"],
   ["2026-09","Billboard","Karol G lidera las nominaciones a los HEAT Latin Music Awards 2026 (Dei V, tres veces)","https://www.billboard.com/music/latin/heat-latin-music-awards-2026-nominations-list-karol-g-1236345769/","hito"],
   ["2026-09","Emisoras Musicales","YOVNGCHIMI, DJ Khaled y Dei V ya suenan en Muy Buena con HVRACAN: el trap que viene a arrasar Europa","https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFZJcHZLYV90dEZoREI4ZWYxcUhEVUpHZ3hRbktVRDFHM3R1NkJrNF9lQV9hODJGbURCeFZSWUtGaGM2OVhOWjF4NURuUmtTU3V4U3NYcHlQeEdlV2h5TFFJMjN6TWNwYWh6SEJPN19yQjlkdTg1aGVxbDNVcVNZWVdSd3VfWFJ1aUx6ekxGVkUtUWtFUEU0Rmt30gGfAUFVX3lxTFBNR2tsZ1QxSS1BN19iS2pQd2VQNE5mT2RCQVFDRmVPZ0gxdjNPM09KS1NjcVlOSF9kdDRBelFSM3Zsd0lxQkstLXZTdE9Id2tuQVN6Q1VJYmwwZUhCLWxwM0NoVnRtTHVCRnNEQmxWSlpRc0pqbzBqWU5sRm12QlduZER6RW1UdTl1UEcyZDVfY1dzYjBOZ0wzYmpNRmRKaw?oc=5","noticia"],
   ["2026-08","EuropaFM","Rauw Alejandro, RaiNao, Dei V, Jowell y Randy y Víctor Manuelle: los vídeos de los artistas invitados del último concierto de Bad Bunny","https://news.google.com/rss/articles/CBMilAJBVV95cUxPdkt4SkJFQlh2R1BPUU50OHJxSklRRUc4Z2lCaHRXbE5aOHZYX0V5Uk1RY3M3anVQa2dITlZKSWRYQ1NXdWlSVi1rVUlTeklMcG1uZVhXNjliS1VtMGdNbmNlNmRIdzBpS3hGZUdMYzVsamNXQ0pOeHJjQkhpR2hFbnN3ek1Bd2dDUnQ1OVZKbTNwdUE1VTdQRUxRS3N6UTRQQ0dmTndfa05iOU10MXhWQUZaczBXZHJINTJuVUExa1JrelRIUnROek50eVhvUmpHZ19XR1pxd29qc1FidTdtdE9iQWMxMjdVWC1KTXFsbEEzVllURHJHY2RfTU96SjVzY0daU2RhNXZRY2JDTi00QWhPQ1LSAZQCQVVfeXFMTm1iWmJrVllBY2pFS3RfcnNrRGJoQTczcVhYVlhlbDNvS3A2OXJyNzY3NDhTUS1ndGJVem9CQ3JRQzJNazM5c0IwS0NMTmFxek5RcE9MN0dUSmhuZlRJdWp1b3doS2N4UHNIUWlJcjJxMnRxNzZIaV9JNlVPT1EtYXdyV0QyTWFTOWxyWTlodklTS2duclMwbDJEZGdDbnVtVkFLLWxEWFBtMU5TTUZzTXBzUGtTTDR5ODB4N1VSUVBrQkJQcm12S3I3aDFhRi1WNUNkWFFzczhmXzhRY1drWW5yY2ozd3Z1eVpUY29Rbmo5UW1WMFMyZzNBYWtFbjRnLTBOWElQYmV4VEdCVC1FTXlSZ3py?oc=5","show"],
@@ -186,9 +187,16 @@ window.DATA = {
   ["2024-10","LOS40","¿Qué conciertos hay en el mes de noviembre? De Teddy Swims a Ruslana pasando por Dei V","https://news.google.com/rss/articles/CBMitAFBVV95cUxNMV9fVjNlTjI4OFkyLWN2d1NEV3lPSm95NFJ3Q2J1Ty1OTFZMdUpMMHhfM3lXNjEyaUl3RnhzeV9ZeUVoYXBMMkJSOGxGbHRpZG5KeWRfM1VvOE5BT2NPOUtscjdBLVhnUVZObmtWMFMyekhfZXJYRjA3OExWZ1VhWVYzTWVzY0pUeVB0ZHdWWktFU1lqdlI3X3E5NEF4VFBtRzlSQWtlYnUxS1JlU3d6ZmF3UkrSAcgBQVVfeXFMTWJBQ2tXZ1hlckZZVmVxRGNteDVSOUJNM1pUVGR2cTQybE5OYTVtYWQ3SjBiU0FYTE90YWVGdjJ1Ty03WkNPal8weUdmdVpJWnpkeXJ4MDhoWHF0ZTJhekRMX0pNS2dpZ3FlM1hKN3gwZWZVTHU0SEhaZFBNRmFSMnphZnAtZmRfR0p6NG1aTHdIUGZ4RjdETWMzSS1KdGQ5NTE5SVYyTm5wYW9XbWtLRWlNYXpQaDU0U3lja1M0QjZ1Y1UyNERra3Q?oc=5","show"],
   ["2024-10","LOS40","¿Quién es Dei V?: Te contamos un poco sobre el puertorriqueño que agendó un concierto en Chile","https://news.google.com/rss/articles/CBMivAFBVV95cUxOSWcwMW1kbWJmZDUtd1ppcXlObE4tUzc2UWlKYzY5WkJCWnV5ejV5Rkx3RmpsV2xQQ3lfWFJSZVRoR3pRalZpUmdJWm1fRnNtTkVKN0oxM1h4NVViS2ViZUlIQjV0UWVzNkJaX2JDaUxmdVNwOVlsb1FqZWpuY084S1ltWUFyQW1jUnh4ZUZmdWFXN2QyU0JUZ1FMaWpSSnBnaFJ6TFRvSFRGYS12dF9WMVVuS0x2YlNYQ0JJRNIB0AFBVV95cUxPWWhmemFpSi0wNWNiME9mcjNlbmw1eFV2UkJ1eTVnTVF1b19RMmMycVBJaVhFempTWThrU1RPVHBKQkZMb2ZMNjlQOVNOYmRWNm5XRjU3Q05TcHZKa0Z4cDA4Ny1xTDQzd1RJMW5wOFphOFV4XzlGX0h1U3p3R1hUNzdPWmxfRGVpMVk4T1E2eGpUQ2RLZmhJWkJ1OGJta09Ga3Rud1NidUxuck5hdjI5ZUpWV0hPUU9DOU5BSWJQMGhkTmxuUXlrQVN2OXMwM1Vk?oc=5","show"],
   ["2024-10","LOS40","Dei V en Chile 2024: Fecha, lugar y venta de entradas","https://news.google.com/rss/articles/CBMihwFBVV95cUxPQk0tYmh2WDRSMUxfRTVJeFJqNE5HMVI1N2RuQWxmZUhBS1hoNGc5dUNjYTdxX2NUaENsSGxNYVVXbzNyWGwzYjVEVWo1aE9qa3Zqb0JaVjhFcmdacU9uTVpJYkhKQUdwMVVXcTBuZ0xwb2gzZ2ZocHEtMi1TaTVOaDNUZVlsdmfSAZsBQVVfeXFMT05oYzBEeWRnakZJdFlsSVVIdGVBcUg1Snh6TFNqRkNXYW5ZYm41QUljbTdFZ0ZvVmZVR2FObmhGVXBHa0lhTkJiWWM2ODBCSnZ1RWxuSV9GdFhlTkxuQTNvMXlqM0tIX3IySW8xTW5mSkJBU0s3YWl2SGZ0c1FIZjhlWmxQYmJBNnlfVmhaaGJ3STNnNFczWGx4ZTA?oc=5","noticia"],
+  ["2024-10","LOS40","Dei V anuncia su concierto en España para cerrar el 2024: fecha, entradas, cuándo y dónde conseguirlas","https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaGFoU2llWHpyeHJsNEpVWWFMeWxJQkVnQTVqMDQzeWhfMUY0aUs3SHB3b3RPS3N0a3FLRjdrWWVSQjlhOGlIMTJnTlZmdFR1S0xPQ0ZKZXJoR2xhNkNMX2hEdmo2Nl9sdVhucWJkOWhXa0phRGlMc1l0YmZlVXlYYUVSaDRxaWZfNnJuRmtCSWQxa21WZENNSHFtZnV1b1ZwZGtpeDZlblRNUWIyLU5idGZKa0NuWVNDVHdSSFNidlBmS25BSFVCLdIB3AFBVV95cUxQZFpNQzdscFlhS1JNV1VvR0hFM29PdjhYa1p2ejQwRjJjNTAwRTBNNFVReGpFOTNCQ0dFN0pFZGZpNHhiRHF4VmliWTU3Wk1jUkVDNVBZd1Y2d1ExYW5QYlNpZ0ppeE5DNm9qRV9zUjdDY0FRWHNNX2Qxd0dXb0psQVR4OFVxNURLRWVaR2FUdXhIZWdMVDdhTnBDY0hnV3ByWFh4VjdWZXBsUUZtRDdNSjNDdUg5U1U0R3lESFRaeml3ZktFS1VfVXhaV2QwaHpWdEZ5Nk1fR2FVUTk0?oc=5","show"],
   ["2024-09","HIGHXTAR.","Dei V crowns itself in Spain with the premiere of its Gallery Session","https://news.google.com/rss/articles/CBMimgFBVV95cUxOXzhwUVRrSlNiZ3VkZUZYUjdtcExyT0NwdkNuZy15amJGZkhyQVJmTUEyTk5zS0pieWRsdk4ydU04M25vT2s2R3JwcGZzdHZXN0pEdFFKQnNHek9ick1PMUNuNm9RRFJ6S1FodXhaUEF4cllEYTV4YjJ2cTg3UUNaQkE5T0w2aUFMOFZOa2R5SnNHRVNNUlZOeElR?oc=5","noticia"],
+  ["2024-07","EuropaFM","Quién es Dei V, el invitado de Karol G en el Bernabéu que triunfa en el trap","https://news.google.com/rss/articles/CBMiyAFBVV95cUxNem51OUUzaE5udW5FMGFDY0JZcHRZVFItdksyT0ZQSDhSS1VfWjU3bm84b3RqVmV6Y2V4Z1RHbEN4OUsyTjB6akRrUjhWU1FmMWk5SXI0V29GSFNlTUdCX040SWs3UUFwUXRYNU9RSXJtbThBWkVNUUFoeUR4LTZ0VmlTc3NkSDF0d2hoRTE2OUpZUjZGbDVORW9UbXFYS1BBaFVqeVlBTFpzaGlSSmstalJLUnlINzFLekdkRktKZ0htbllrSWE3N9IByAFBVV95cUxNYklIQlRXSlFLWm1acEl6RElKbVVSem02R2RkOVJlRjFYckJ4cUlBTHNlbWV4ck5qVGtHak1zcnpZQUFhVXBYd0gzWV90a3dScTFnWlViTlhfTy0wRTB3aVAxMkxpbFlOVWczSnMtWmhxQ01fVFZicXBOT2Z0djNJMzYzeVNLLTUxRGpJZnhYXzNhc19zR3AwaHdJMW9ualZTOVBqdDd1cGlUU0dxUWFfMlIyaWQ2a2dBZG9La0JKcDhITWVSUnhYUQ?oc=5","noticia"],
   ["2024-06","The Mirror US","Puerto Rican artist Dei V 'thankful' for his success as new album reached number one","https://news.google.com/rss/articles/CBMifkFVX3lxTE04Rk05TGYxTFhORnQycDItM05rNVlXdWxKUDdrMWJGcVZLdVRQbm5qaW0ybWdqU2Z0YnI2RTNQd3F6RGJPM1ZrV1Yxd1ZpOGlhM2lRdjlMOWNuT3NpQ3hCZjNJdkRCSTh4OElwcjBFa2l3eFVfNk9OSnlWRFpwd9IBgwFBVV95cUxNWTN6RmxDZVhYd0VIZ1cyNTdIeHFTTjFTbS1Gb2FsOFlQYl9wckJacnEtTnBmQ1NNZndscmJHVDE5MGpOamE2TTIta3hjdG9QbUtRQ2E5S2UtaW9hcmdBeUhpNTdkQWZjTWIwUmJSRC1ld281UUJxSXFpcEFJX05CNE0xTQ?oc=5","lanzamiento"],
   ["2024-06","Remezcla","INTERVIEW: Dei V Talks Karol G & Bad Bunny Co-Signs & New Album ‘Quién Es Dei V?’","https://news.google.com/rss/articles/CBMirwFBVV95cUxQbGcwZU1FMUxxbUtGLS1pQ0toSS13VUlFUlA1ZW5ub2FxWG9obDhvWHlkTTdKNEwtNmxNY0hKUUEzMDl4bTdqYVZBMUxJMHRyejhiUHhQTlNfQlNHc19HeHNRQTVudEwyYW93NTZBQXpYazg1akFLSy1XNEY0NU1FRVZjNjVUVTZqZkRWVzgtazVNWkZUY2JkWXp3Q1g4OEJEOEhxYUhfNlBFR1lRNldn?oc=5","entrevista"],
+  ["2024-06","El Generacional","‘Quién es Dei V?’: el nuevo y esperado álbum de Dei V","https://news.google.com/rss/articles/CBMirwFBVV95cUxOelRlWHUyMncwTS1nUUVXUGpHcERfbzJUUkF0NVZMV2p0dm5Sb2ZYbVZYQmZuaWhXNlpvX3BJOXZkZDg3MGVDVS1EWjJ1a09nLWpQRl9pNTFCTGhXYnluc1lLN3p1S0s4Y3FuNnVZb0s1NmdPT3dqaWd2MGN3aWN0a0s5bmdtMWZXMGhuSkdlSlA3bXdXa3J2akQ3VE1SOWxCVkR4NVZlNnlleXpmeFdJ?oc=5","lanzamiento"],
+  ["2024-06","LOS40","'Quién Es Dei V?', el nuevo álbum del artista puertorriqueño con colaboraciones internacionales","https://news.google.com/rss/articles/CBMivgFBVV95cUxOVk8xcXl0VXFFT1JpeGNnbl9BQTdLOEtxVTN4OXVuSEUtT05QQXZwREZ2ZUNiZUlFMWxNWGo3M0FUengxLWZzX3BNdy1mTTZqOGt1WEd4NjM4NnA2TURwM2d6eUJfa256cWZJdk5DMmF3QkNOU2E0RVV6TVIySUE4elp6LTdsVWxYMk10WXVzUXB1RjNzSElFSWRZZTFEa0VMZ3dlRXNrcUZvbG53T3IzLV9HeEhpazJ0S2hFV3Bn0gHSAUFVX3lxTE1KLURlMk85RDI5RjJldkxtNW4tMkJWanl5a2tka3BNNkhuUDk2MHdiZm1KbVd5bjlEclN4MnJfeHlMLTREQ0htV3N3d0ZsTVhDVHhhWjhJMTBJcHQzMjR5VVRUekF3T3FZeFlFbkpVb0JGNTlPX1RZaFFIaW1PVzVFaU9TZUlObUlxSGVzVG95cjNUVkRaZmJLY1NmRGh4V2VXbV9Lb2Q5SVlZcWxHVHlNSWhheTczcEQ4LUFLV2V6ZlNWZXl2REZBNHNXaWY0MmlkUQ?oc=5","lanzamiento"],
+  ["2024-06","Rolling Stone en Español","Dei V presenta Quién es Dei V?, su álbum debut","https://news.google.com/rss/articles/CBMifkFVX3lxTE9mUUtLR2c2bFFrV2p3MFVPaU84SUpzbF9CbXY3V2xfNXVjQ2M4Y3RVYXNUUDVEdlBLTVE3WS1yZXJiTjBXcmNEcnRydkhtdkRHZGpkc21NN2o4TkxDcXJFTnZNM1dTZ1ZKclR4MkNabkgyNGVvSjAzaGYzS3U0dw?oc=5","lanzamiento"],
+  ["2024-06","MegaStarFM","Dei V estrena 'Clima', primer 'single' de su próximo álbum","https://news.google.com/rss/articles/CBMipAFBVV95cUxObDRVMS1DeGNzak1tWW1MTHJQNnVoWC0yWVhSMjRFOXF1SzFQUmZScHlIb1VBLVdqTkNlNjFTa2RNY0ZnMDhITTVaQWRTaXZTYmI4UWhfekJZTUxxaVFERG5UcGVYMEkxMHVmODlJdWxNWjZ3Mm5FWFFVX0YxWDl4RUxnSTdLN09QZ1Y1SjdzVkpuWVdJQTlmT2g5Vmo3VUlWUTk0S9IBqgFBVV95cUxQQ3BSbHlGbWhvZXQ1STZSZTllX09JV2xMWkdDOXpsWC1zTE1XQzRwUTZQcmVkUXR4aWFFdHJqbFBPMFA3QnByRXFON1VGRVptVXhFNUd5WFJWSFdpM2lVRUpfTENtTVZGbTVlRGFITXIyeEJrSlZRcWRjN3ZjQVBvR0Q5WDlLb25BS01qZDFxWjhVZk1SVDZQcHl2czByZUUxOFBsSUZvRmgtQQ?oc=5","lanzamiento"],
+  ["2024-01","CusicaPlus","Dei V anuncia nuevo álbum y EP","https://news.google.com/rss/articles/CBMidEFVX3lxTE55ZGdoU25VWnBWN0ZtUktQcXdpLU1ZN3E1cWFZRFZxUlRrdm0tLW9ONFBrVnZTZkdnZXd4LWJiOUYtR1RZeHFaSEFBWGR5by1HSDFDZ2tyVDJlU1VWOVlRUDZHbFR0VURLd1ZmUmdpdk1rYTN50gF6QVVfeXFMTXdOUllIUUFSSjFmbGpXdmJzaVRpb0hLcVZDOWhkLUJfbTVmNVF3OGdZSlBRWU9rLW9ka0ZqbS14UUhDLVJfYjk0NkxyaS0wWnlKZFdLR1JFZ3FmQW1fa2VEMGUyZklHMXhJaDZwOU9kNFZ4cmJFckllcmc?oc=5","lanzamiento"],
   ["2024","Miami New Times","Puerto Rican rapper Dei V talks collaborating with J Balvin, Jhayco","https://www.miaminewtimes.com/music/puerto-rican-rapper-dei-v-talks-collaborating-with-j-balvin-jhayco-21650749/","entrevista"],
   ["2024-06","Remezcla","Dei V talks Karol G & Bad Bunny co-signs & new album “Quién Es Dei V?”","https://remezcla.com/features/music/interview-dei-v-talks-karol-g-bad-bunny-co-signs-new-album-quien-es-dei-v/","entrevista"],
   ["2024-06","Rolling Stone","Dei V shares “Quién Es Dei V?” album featuring Myke Towers, Lunay","https://www.rollingstone.com/music/music-latin/dei-v-shares-quien-es-dei-v-album-myke-towers-lunay-1235040309/","lanzamiento"],
@@ -218,7 +226,7 @@ window.DATA = {
   ["7330408875402808618","“Tu$$i” con YOVNGCHIMI"]
  ],
  "nums": [
-  {"v":178,"suffix":"M","l":"vistas de “Narcotics” con Bryant Myers en YouTube","yt":"oujzyZfQF94"},
+  {"v":179,"suffix":"M","l":"vistas de “Narcotics” con Bryant Myers en YouTube","yt":"oujzyZfQF94"},
   {"v":1000,"suffix":"M+","l":"streams en Spotify de “VeLDÁ” con Bad Bunny y Omar Courtz"},
   {"v":23,"prefix":"#","l":"puesto máximo en el Billboard Hot 100 con “VeLDÁ”"},
   {"v":1,"prefix":"#","l":"en España con su álbum debut ¿Quién es Dei V? y con “Badgyal”"},
@@ -226,9 +234,9 @@ window.DATA = {
   {"v":51,"suffix":"M","l":"vistas del freestyle “¿Quién es Dei V?”, el que lo hizo explotar","yt":"h8f64lb_kn8"}
  ],
  "releases": [
+  {"id":"Wg0O1pUVA-E","t":"Dei V, Kendo Kaponi, Juanka - Halloween","date":"2026-11-04","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/Wg0O1pUVA-E/maxresdefault.jpg","coverAlt":"Portada de Dei V, Kendo Kaponi, Juanka - Halloween","reel":[]},
   {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/KKc8jsO0nIM/maxresdefault.jpg","coverAlt":"Portada de Dei V, Rauw Alejandro - All Night | Flavorz Pack","reel":[]},
-  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/gIojKaxybhE/maxresdefault.jpg","coverAlt":"Portada de Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","reel":[]},
-  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/b6QUECYluOg/maxresdefault.jpg","coverAlt":"Portada de Tabacco | Flavorz Pack","reel":[]}
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","date":"2026-10-15","accent":"#ff3b3b","facts":[],"cover":"https://i.ytimg.com/vi/gIojKaxybhE/maxresdefault.jpg","coverAlt":"Portada de Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","reel":[]}
  ],
  "seen": [
   "infobaedeivlaestrelladeunanuevageneraciondelamusicaurbanaapadrinadaporbadbunnyelconejoesunejemploaseguirparatodos",
@@ -347,7 +355,17 @@ window.DATA = {
   "lavozdegaliciagafasdesolamedianocheyplenoal15paradeivbrytiagoyyanblockencambados",
   "remezclainterviewdeivservesupnewsidesofhissoundonflavorzpack",
   "remezcla10newsongstolistentobychuwilosmenor3sdeivmore",
-  "httpslatinationcomdeivservesupflavorzpackwithrauwalejandroozunaandastarstuddedlineup"
+  "httpslatinationcomdeivservesupflavorzpackwithrauwalejandroozunaandastarstuddedlineup",
+  "los40rauwalejandroylascolaboracionesdesuproximoalbumdeivyovngchimikaliuchismyketowersyeladiocarrion",
+  "rollingstoneenespanoldeivpresentaquienesdeivsualbumdebut",
+  "los40quienesdeivelnuevoalbumdelartistapuertorriquenoconcolaboracionesinternacionales",
+  "megastarfmdeivestrenaclimaprimersingledesuproximoalbum",
+  "europafmquienesdeivelinvitadodekarolgenelbernabeuquetriunfaeneltrap",
+  "elgeneracionalquienesdeivelnuevoyesperadoalbumdedeiv",
+  "cusicaplusdeivanuncianuevoalbumyep",
+  "los40deivanunciasuconciertoenespanaparacerrarel2024fechaentradascuandoydondeconseguirlas",
+  "imdbdeivsharesquienesdeivalbumfeaturingmyketowerslunay",
+  "rollingstonedeivsharesquienesdeivalbumfeaturingmyketowerslunay"
  ],
- "updated": "2026-10-22"
+ "updated": "2026-11-04"
 };
