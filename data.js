@@ -35,22 +35,22 @@ window.DATA = {
   {"y":"Ya salió","t":"CHOCOLATE","d":"Cinco temas, con Ozuna y Wisin x Baby Ranks.","img":"assets/img/eps/chocolate.png","ar":true,"href":"#musica"}
  ],
  "videos": [
-  {"id":"Wg0O1pUVA-E","t":"Dei V, Kendo Kaponi, Juanka - Halloween","m":"nuevo","views":517510},
-  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":1208419},
-  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":1197738},
-  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":226392},
-  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":785792},
-  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":5762121},
-  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":2168724},
-  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":116990967},
-  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":179301668},
-  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51772601},
-  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":62919493},
-  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":60154752},
-  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58429576},
-  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":51217649},
-  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45533038},
-  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30800453}
+  {"id":"Wg0O1pUVA-E","t":"Dei V, Kendo Kaponi, Juanka - Halloween","m":"nuevo","views":774860},
+  {"id":"KKc8jsO0nIM","t":"Dei V, Rauw Alejandro - All Night | Flavorz Pack","m":"nuevo","views":1304532},
+  {"id":"gIojKaxybhE","t":"Dei V, Myke Towers, Nicky Jam - Una De Una | Flavorz Pack","m":"nuevo","views":1344611},
+  {"id":"b6QUECYluOg","t":"Tabacco | Flavorz Pack","m":"nuevo","views":262714},
+  {"id":"YKeTo7LXuNo","t":"Kisses","m":"nuevo","views":810499},
+  {"id":"0pzNfupqgzg","t":"èmó","m":"nuevo","views":5911175},
+  {"id":"NBCY7XWQyRE","t":"Cuchi Cuchi","m":"el último tema · nuevo","views":2251656},
+  {"id":"yNEpyU3PnDI","t":"VeLDÁ","m":"Bad Bunny, Omar Courtz","views":117541445},
+  {"id":"oujzyZfQF94","t":"Narcotics","m":"con Bryant Myers","views":179698147},
+  {"id":"h8f64lb_kn8","t":"¿Quién es Dei V?","m":"freestyle","views":51824848},
+  {"id":"p3iAcDCbWK0","t":"Dame La Verde","m":"con Luar La L","views":63110710},
+  {"id":"bk5RwmOwyy4","t":"Martini","m":"2024","views":60326270},
+  {"id":"uexN9gs5gvM","t":"Trending Remix","m":"con Myke Towers","views":58520099},
+  {"id":"oj1HKqjZFcY","t":"Single","m":"2023","views":51324383},
+  {"id":"Hsoto13vPlI","t":"Gatita Gangster","m":"con Karol G","views":45584753},
+  {"id":"9fzB0X5SRyE","t":"Toa","m":"con De La Rose","views":30931219}
  ],
  "quotes": [
   ["“Trabajar duro, ser disciplinado, responsable. Y ser tú.”","El Plural"],
@@ -365,7 +365,8 @@ window.DATA = {
   "cusicaplusdeivanuncianuevoalbumyep",
   "los40deivanunciasuconciertoenespanaparacerrarel2024fechaentradascuandoydondeconseguirlas",
   "imdbdeivsharesquienesdeivalbumfeaturingmyketowerslunay",
-  "rollingstonedeivsharesquienesdeivalbumfeaturingmyketowerslunay"
+  "rollingstonedeivsharesquienesdeivalbumfeaturingmyketowerslunay",
+  "holanewselartistaurbanodeivpresentaflavorzpackalbumcondistintossaboresmusicales"
  ],
- "updated": "2026-11-04"
+ "updated": "2026-11-09"
 };
